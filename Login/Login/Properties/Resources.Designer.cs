@@ -93,6 +93,16 @@ namespace Login.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Imagen_de_WhatsApp_2024_01_12_a_las_10_11_08_ef9be1a7 {
+            get {
+                object obj = ResourceManager.GetObject("Imagen de WhatsApp 2024-01-12 a las 10.11.08_ef9be1a7", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap png_clipart_computer_icons_user_profile_circle_abstract_miscellaneous_rim {
             get {
                 object obj = ResourceManager.GetObject("png-clipart-computer-icons-user-profile-circle-abstract-miscellaneous-rim", resourceCulture);
