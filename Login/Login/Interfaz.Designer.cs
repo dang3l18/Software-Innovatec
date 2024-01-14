@@ -35,9 +35,11 @@ namespace Login
             this.Panelmenu = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnBarramenu = new Bunifu.Framework.UI.BunifuImageButton();
             this.Panelmenu.SuspendLayout();
             this.bunifuGradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnBarramenu)).BeginInit();
             this.SuspendLayout();
             // 
             // PanelDesktop
@@ -90,6 +92,7 @@ namespace Login
             // 
             this.bunifuGradientPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel1.BackgroundImage")));
             this.bunifuGradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuGradientPanel1.Controls.Add(this.btnBarramenu);
             this.bunifuGradientPanel1.Controls.Add(this.pictureBox1);
             this.bunifuGradientPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.bunifuGradientPanel1.GradientBottomLeft = System.Drawing.Color.Red;
@@ -107,10 +110,23 @@ namespace Login
             this.pictureBox1.Image = global::Login.Properties.Resources.Imagen_de_WhatsApp_2024_01_12_a_las_10_11_08_ef9be1a7;
             this.pictureBox1.Location = new System.Drawing.Point(-3, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(233, 112);
+            this.pictureBox1.Size = new System.Drawing.Size(176, 112);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            // 
+            // btnBarramenu
+            // 
+            this.btnBarramenu.BackColor = System.Drawing.Color.Salmon;
+            this.btnBarramenu.Image = ((System.Drawing.Image)(resources.GetObject("btnBarramenu.Image")));
+            this.btnBarramenu.ImageActive = null;
+            this.btnBarramenu.Location = new System.Drawing.Point(179, 3);
+            this.btnBarramenu.Name = "btnBarramenu";
+            this.btnBarramenu.Size = new System.Drawing.Size(48, 46);
+            this.btnBarramenu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnBarramenu.TabIndex = 0;
+            this.btnBarramenu.TabStop = false;
+            this.btnBarramenu.Zoom = 10;
             // 
             // Interfaz
             // 
@@ -125,6 +141,7 @@ namespace Login
             this.Panelmenu.ResumeLayout(false);
             this.bunifuGradientPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnBarramenu)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -136,5 +153,6 @@ namespace Login
         private System.Windows.Forms.PictureBox pictureBox1;
         private Bunifu.Framework.UI.BunifuGradientPanel Paneltitlebar;
         private Bunifu.Framework.UI.BunifuGradientPanel PanelDesktop;
+        private Bunifu.Framework.UI.BunifuImageButton btnBarramenu;
     }
 }
