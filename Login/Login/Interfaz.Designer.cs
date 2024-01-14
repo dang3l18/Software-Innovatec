@@ -52,10 +52,10 @@ namespace Login
             this.PanelDesktop.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PanelDesktop.BackgroundImage")));
             this.PanelDesktop.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.PanelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PanelDesktop.GradientBottomLeft = System.Drawing.Color.White;
-            this.PanelDesktop.GradientBottomRight = System.Drawing.Color.White;
+            this.PanelDesktop.GradientBottomLeft = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.PanelDesktop.GradientBottomRight = System.Drawing.Color.Fuchsia;
             this.PanelDesktop.GradientTopLeft = System.Drawing.Color.White;
-            this.PanelDesktop.GradientTopRight = System.Drawing.Color.White;
+            this.PanelDesktop.GradientTopRight = System.Drawing.Color.Black;
             this.PanelDesktop.Location = new System.Drawing.Point(230, 60);
             this.PanelDesktop.Name = "PanelDesktop";
             this.PanelDesktop.Quality = 10;
@@ -67,10 +67,10 @@ namespace Login
             this.Paneltitlebar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Paneltitlebar.BackgroundImage")));
             this.Paneltitlebar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Paneltitlebar.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Paneltitlebar.GradientBottomLeft = System.Drawing.Color.Red;
-            this.Paneltitlebar.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.Paneltitlebar.GradientTopLeft = System.Drawing.Color.RosyBrown;
-            this.Paneltitlebar.GradientTopRight = System.Drawing.Color.Salmon;
+            this.Paneltitlebar.GradientBottomLeft = System.Drawing.Color.Black;
+            this.Paneltitlebar.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.Paneltitlebar.GradientTopLeft = System.Drawing.Color.WhiteSmoke;
+            this.Paneltitlebar.GradientTopRight = System.Drawing.Color.Black;
             this.Paneltitlebar.Location = new System.Drawing.Point(230, 0);
             this.Paneltitlebar.Name = "Paneltitlebar";
             this.Paneltitlebar.Quality = 10;
@@ -88,10 +88,10 @@ namespace Login
             this.Panelmenu.Controls.Add(this.bunifuFlatButton1);
             this.Panelmenu.Controls.Add(this.bunifuGradientPanel1);
             this.Panelmenu.Dock = System.Windows.Forms.DockStyle.Left;
-            this.Panelmenu.GradientBottomLeft = System.Drawing.Color.Red;
-            this.Panelmenu.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.Panelmenu.GradientTopLeft = System.Drawing.Color.RosyBrown;
-            this.Panelmenu.GradientTopRight = System.Drawing.Color.Salmon;
+            this.Panelmenu.GradientBottomLeft = System.Drawing.Color.Black;
+            this.Panelmenu.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.Panelmenu.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.Panelmenu.GradientTopRight = System.Drawing.Color.Black;
             this.Panelmenu.Location = new System.Drawing.Point(0, 0);
             this.Panelmenu.Name = "Panelmenu";
             this.Panelmenu.Quality = 10;
@@ -105,10 +105,10 @@ namespace Login
             this.bunifuGradientPanel1.Controls.Add(this.btnBarramenu);
             this.bunifuGradientPanel1.Controls.Add(this.pictureBox1);
             this.bunifuGradientPanel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.bunifuGradientPanel1.GradientBottomLeft = System.Drawing.Color.Red;
-            this.bunifuGradientPanel1.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.bunifuGradientPanel1.GradientTopLeft = System.Drawing.Color.RosyBrown;
-            this.bunifuGradientPanel1.GradientTopRight = System.Drawing.Color.Salmon;
+            this.bunifuGradientPanel1.GradientBottomLeft = System.Drawing.Color.Black;
+            this.bunifuGradientPanel1.GradientBottomRight = System.Drawing.Color.Gray;
+            this.bunifuGradientPanel1.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.bunifuGradientPanel1.GradientTopRight = System.Drawing.Color.Black;
             this.bunifuGradientPanel1.Location = new System.Drawing.Point(0, 0);
             this.bunifuGradientPanel1.Name = "bunifuGradientPanel1";
             this.bunifuGradientPanel1.Quality = 10;
@@ -117,7 +117,7 @@ namespace Login
             // 
             // btnBarramenu
             // 
-            this.btnBarramenu.BackColor = System.Drawing.Color.Salmon;
+            this.btnBarramenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnBarramenu.Image = ((System.Drawing.Image)(resources.GetObject("btnBarramenu.Image")));
             this.btnBarramenu.ImageActive = null;
             this.btnBarramenu.Location = new System.Drawing.Point(179, 3);
