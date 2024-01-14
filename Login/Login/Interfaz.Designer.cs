@@ -60,10 +60,10 @@ namespace Login
             this.Paneltitlebar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Paneltitlebar.BackgroundImage")));
             this.Paneltitlebar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Paneltitlebar.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Paneltitlebar.GradientBottomLeft = System.Drawing.Color.WhiteSmoke;
-            this.Paneltitlebar.GradientBottomRight = System.Drawing.Color.WhiteSmoke;
-            this.Paneltitlebar.GradientTopLeft = System.Drawing.Color.WhiteSmoke;
-            this.Paneltitlebar.GradientTopRight = System.Drawing.Color.WhiteSmoke;
+            this.Paneltitlebar.GradientBottomLeft = System.Drawing.Color.Red;
+            this.Paneltitlebar.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.Paneltitlebar.GradientTopLeft = System.Drawing.Color.RosyBrown;
+            this.Paneltitlebar.GradientTopRight = System.Drawing.Color.Salmon;
             this.Paneltitlebar.Location = new System.Drawing.Point(230, 0);
             this.Paneltitlebar.Name = "Paneltitlebar";
             this.Paneltitlebar.Quality = 10;
