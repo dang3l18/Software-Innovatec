@@ -93,9 +93,49 @@ namespace Login.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap cerrar {
+            get {
+                object obj = ResourceManager.GetObject("cerrar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Imagen_de_WhatsApp_2024_01_12_a_las_10_11_08_ef9be1a7 {
             get {
                 object obj = ResourceManager.GetObject("Imagen de WhatsApp 2024-01-12 a las 10.11.08_ef9be1a7", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap maximizar {
+            get {
+                object obj = ResourceManager.GetObject("maximizar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap maximizar_real {
+            get {
+                object obj = ResourceManager.GetObject("maximizar real", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap minimizar_signo__1_ {
+            get {
+                object obj = ResourceManager.GetObject("minimizar-signo (1)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

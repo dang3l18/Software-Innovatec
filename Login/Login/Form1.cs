@@ -21,5 +21,18 @@ namespace Login
         {
 
         }
+
+        private void alphaBlendTextBox3_TextChanged(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void bunifuThinButton21_Click(object sender, EventArgs e)
+        {
+            Form FORMULARIO1 = new Interfaz();
+            FORMULARIO1.Show();
+            FORMULARIO1.Visible = true;
+            Visible = false;
+        }
     }
 }

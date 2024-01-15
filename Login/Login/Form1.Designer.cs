@@ -35,7 +35,6 @@ namespace Login
             this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.alphaBlendTextBox4 = new ZBobb.AlphaBlendTextBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.alphaBlendTextBox3 = new ZBobb.AlphaBlendTextBox();
             this.bunifuCheckbox1 = new Bunifu.Framework.UI.BunifuCheckbox();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -44,6 +43,7 @@ namespace Login
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.alphaBlendTextBox1 = new ZBobb.AlphaBlendTextBox();
+            this.bunifuThinButton21 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuGradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -60,9 +60,9 @@ namespace Login
             this.bunifuGradientPanel1.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.bunifuGradientPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel1.BackgroundImage")));
             this.bunifuGradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuGradientPanel1.Controls.Add(this.bunifuThinButton21);
             this.bunifuGradientPanel1.Controls.Add(this.alphaBlendTextBox4);
             this.bunifuGradientPanel1.Controls.Add(this.pictureBox3);
-            this.bunifuGradientPanel1.Controls.Add(this.alphaBlendTextBox3);
             this.bunifuGradientPanel1.Controls.Add(this.bunifuCheckbox1);
             this.bunifuGradientPanel1.Controls.Add(this.label1);
             this.bunifuGradientPanel1.Controls.Add(this.pictureBox2);
@@ -73,10 +73,10 @@ namespace Login
             this.bunifuGradientPanel1.Controls.Add(this.alphaBlendTextBox1);
             this.bunifuGradientPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.bunifuGradientPanel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.bunifuGradientPanel1.GradientBottomLeft = System.Drawing.Color.Red;
+            this.bunifuGradientPanel1.GradientBottomLeft = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.bunifuGradientPanel1.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.bunifuGradientPanel1.GradientTopLeft = System.Drawing.Color.RosyBrown;
-            this.bunifuGradientPanel1.GradientTopRight = System.Drawing.Color.Salmon;
+            this.bunifuGradientPanel1.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.bunifuGradientPanel1.Location = new System.Drawing.Point(0, 0);
             this.bunifuGradientPanel1.Name = "bunifuGradientPanel1";
             this.bunifuGradientPanel1.Quality = 10;
@@ -106,20 +106,6 @@ namespace Login
             this.pictureBox3.Size = new System.Drawing.Size(63, 67);
             this.pictureBox3.TabIndex = 8;
             this.pictureBox3.TabStop = false;
-            // 
-            // alphaBlendTextBox3
-            // 
-            this.alphaBlendTextBox3.BackAlpha = 0;
-            this.alphaBlendTextBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.alphaBlendTextBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.alphaBlendTextBox3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.alphaBlendTextBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.alphaBlendTextBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.alphaBlendTextBox3.Location = new System.Drawing.Point(187, 539);
-            this.alphaBlendTextBox3.Name = "alphaBlendTextBox3";
-            this.alphaBlendTextBox3.Size = new System.Drawing.Size(74, 28);
-            this.alphaBlendTextBox3.TabIndex = 7;
-            this.alphaBlendTextBox3.Text = "LOGIN";
             // 
             // bunifuCheckbox1
             // 
@@ -214,6 +200,32 @@ namespace Login
             this.alphaBlendTextBox1.TabIndex = 0;
             this.alphaBlendTextBox1.Text = "Usuario";
             // 
+            // bunifuThinButton21
+            // 
+            this.bunifuThinButton21.ActiveBorderThickness = 1;
+            this.bunifuThinButton21.ActiveCornerRadius = 20;
+            this.bunifuThinButton21.ActiveFillColor = System.Drawing.Color.Transparent;
+            this.bunifuThinButton21.ActiveForecolor = System.Drawing.Color.Transparent;
+            this.bunifuThinButton21.ActiveLineColor = System.Drawing.Color.Transparent;
+            this.bunifuThinButton21.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuThinButton21.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton21.BackgroundImage")));
+            this.bunifuThinButton21.ButtonText = "Login";
+            this.bunifuThinButton21.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuThinButton21.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuThinButton21.ForeColor = System.Drawing.Color.SeaGreen;
+            this.bunifuThinButton21.IdleBorderThickness = 1;
+            this.bunifuThinButton21.IdleCornerRadius = 20;
+            this.bunifuThinButton21.IdleFillColor = System.Drawing.Color.Transparent;
+            this.bunifuThinButton21.IdleForecolor = System.Drawing.Color.Black;
+            this.bunifuThinButton21.IdleLineColor = System.Drawing.Color.Transparent;
+            this.bunifuThinButton21.Location = new System.Drawing.Point(123, 559);
+            this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(5);
+            this.bunifuThinButton21.Name = "bunifuThinButton21";
+            this.bunifuThinButton21.Size = new System.Drawing.Size(181, 34);
+            this.bunifuThinButton21.TabIndex = 10;
+            this.bunifuThinButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuThinButton21.Click += new System.EventHandler(this.bunifuThinButton21_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -244,9 +256,9 @@ namespace Login
         private System.Windows.Forms.Panel panel2;
         private Bunifu.Framework.UI.BunifuCheckbox bunifuCheckbox1;
         private System.Windows.Forms.Label label1;
-        private ZBobb.AlphaBlendTextBox alphaBlendTextBox3;
         private ZBobb.AlphaBlendTextBox alphaBlendTextBox4;
         private System.Windows.Forms.PictureBox pictureBox3;
+        private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton21;
     }
 }
 

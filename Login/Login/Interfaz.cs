@@ -16,5 +16,44 @@ namespace Login
         {
             InitializeComponent();
         }
+
+        private void Panelmenu_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void IconMaximizar_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Maximized;
+            IconRestaurar.Visible = true;
+            IconMaximizar.Visible = false;
+        }
+
+        private void IconRestaurar_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Normal;
+            IconRestaurar.Visible = false;
+            IconMaximizar.Visible = true;
+        }
     }
 }
