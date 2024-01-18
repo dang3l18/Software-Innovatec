@@ -20,9 +20,9 @@ namespace Login {
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
-    [global::System.Xml.Serialization.XmlRootAttribute("Base_de_Datos_SoftwareDataSet1")]
+    [global::System.Xml.Serialization.XmlRootAttribute("Base_de_datos_CONEXIONDataSet")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
-    public partial class Base_de_Datos_SoftwareDataSet1 : global::System.Data.DataSet {
+    public partial class Base_de_datos_CONEXIONDataSet : global::System.Data.DataSet {
         
         private UsuarioDataTable tableUsuario;
         
@@ -30,7 +30,7 @@ namespace Login {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public Base_de_Datos_SoftwareDataSet1() {
+        public Base_de_datos_CONEXIONDataSet() {
             this.BeginInit();
             this.InitClass();
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -41,7 +41,7 @@ namespace Login {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        protected Base_de_Datos_SoftwareDataSet1(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+        protected Base_de_datos_CONEXIONDataSet(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -127,7 +127,7 @@ namespace Login {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         public override global::System.Data.DataSet Clone() {
-            Base_de_Datos_SoftwareDataSet1 cln = ((Base_de_Datos_SoftwareDataSet1)(base.Clone()));
+            Base_de_datos_CONEXIONDataSet cln = ((Base_de_datos_CONEXIONDataSet)(base.Clone()));
             cln.InitVars();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
@@ -199,9 +199,9 @@ namespace Login {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitClass() {
-            this.DataSetName = "Base_de_Datos_SoftwareDataSet1";
+            this.DataSetName = "Base_de_datos_CONEXIONDataSet";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/Base_de_Datos_SoftwareDataSet1.xsd";
+            this.Namespace = "http://tempuri.org/Base_de_datos_CONEXIONDataSet.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
             this.tableUsuario = new UsuarioDataTable();
@@ -225,7 +225,7 @@ namespace Login {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-            Base_de_Datos_SoftwareDataSet1 ds = new Base_de_Datos_SoftwareDataSet1();
+            Base_de_datos_CONEXIONDataSet ds = new Base_de_datos_CONEXIONDataSet();
             global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
             global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
             global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
@@ -463,8 +463,14 @@ namespace Login {
                 base.Columns.Add(this.columnRegistrar);
                 this.columnSu = new global::System.Data.DataColumn("Su", typeof(bool), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnSu);
+                this.columnIDUsuario.AllowDBNull = false;
+                this.columnNombre.AllowDBNull = false;
                 this.columnNombre.MaxLength = 20;
+                this.columnContraseña.AllowDBNull = false;
                 this.columnContraseña.MaxLength = 50;
+                this.columnConsultar.AllowDBNull = false;
+                this.columnRegistrar.AllowDBNull = false;
+                this.columnSu.AllowDBNull = false;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -532,7 +538,7 @@ namespace Login {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                Base_de_Datos_SoftwareDataSet1 ds = new Base_de_Datos_SoftwareDataSet1();
+                Base_de_datos_CONEXIONDataSet ds = new Base_de_datos_CONEXIONDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -609,12 +615,7 @@ namespace Login {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public int IDUsuario {
                 get {
-                    try {
-                        return ((int)(this[this.tableUsuario.IDUsuarioColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'IDUsuario\' de la tabla \'Usuario\' es DBNull.", e);
-                    }
+                    return ((int)(this[this.tableUsuario.IDUsuarioColumn]));
                 }
                 set {
                     this[this.tableUsuario.IDUsuarioColumn] = value;
@@ -625,12 +626,7 @@ namespace Login {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public string Nombre {
                 get {
-                    try {
-                        return ((string)(this[this.tableUsuario.NombreColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Nombre\' de la tabla \'Usuario\' es DBNull.", e);
-                    }
+                    return ((string)(this[this.tableUsuario.NombreColumn]));
                 }
                 set {
                     this[this.tableUsuario.NombreColumn] = value;
@@ -641,12 +637,7 @@ namespace Login {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public string Contraseña {
                 get {
-                    try {
-                        return ((string)(this[this.tableUsuario.ContraseñaColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Contraseña\' de la tabla \'Usuario\' es DBNull.", e);
-                    }
+                    return ((string)(this[this.tableUsuario.ContraseñaColumn]));
                 }
                 set {
                     this[this.tableUsuario.ContraseñaColumn] = value;
@@ -657,12 +648,7 @@ namespace Login {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public bool Consultar {
                 get {
-                    try {
-                        return ((bool)(this[this.tableUsuario.ConsultarColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Consultar\' de la tabla \'Usuario\' es DBNull.", e);
-                    }
+                    return ((bool)(this[this.tableUsuario.ConsultarColumn]));
                 }
                 set {
                     this[this.tableUsuario.ConsultarColumn] = value;
@@ -673,12 +659,7 @@ namespace Login {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public bool Registrar {
                 get {
-                    try {
-                        return ((bool)(this[this.tableUsuario.RegistrarColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Registrar\' de la tabla \'Usuario\' es DBNull.", e);
-                    }
+                    return ((bool)(this[this.tableUsuario.RegistrarColumn]));
                 }
                 set {
                     this[this.tableUsuario.RegistrarColumn] = value;
@@ -689,88 +670,11 @@ namespace Login {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public bool Su {
                 get {
-                    try {
-                        return ((bool)(this[this.tableUsuario.SuColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Su\' de la tabla \'Usuario\' es DBNull.", e);
-                    }
+                    return ((bool)(this[this.tableUsuario.SuColumn]));
                 }
                 set {
                     this[this.tableUsuario.SuColumn] = value;
                 }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool IsIDUsuarioNull() {
-                return this.IsNull(this.tableUsuario.IDUsuarioColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void SetIDUsuarioNull() {
-                this[this.tableUsuario.IDUsuarioColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool IsNombreNull() {
-                return this.IsNull(this.tableUsuario.NombreColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void SetNombreNull() {
-                this[this.tableUsuario.NombreColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool IsContraseñaNull() {
-                return this.IsNull(this.tableUsuario.ContraseñaColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void SetContraseñaNull() {
-                this[this.tableUsuario.ContraseñaColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool IsConsultarNull() {
-                return this.IsNull(this.tableUsuario.ConsultarColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void SetConsultarNull() {
-                this[this.tableUsuario.ConsultarColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool IsRegistrarNull() {
-                return this.IsNull(this.tableUsuario.RegistrarColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void SetRegistrarNull() {
-                this[this.tableUsuario.RegistrarColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool IsSuNull() {
-                return this.IsNull(this.tableUsuario.SuColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void SetSuNull() {
-                this[this.tableUsuario.SuColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -809,7 +713,7 @@ namespace Login {
         }
     }
 }
-namespace Login.Base_de_Datos_SoftwareDataSet1TableAdapters {
+namespace Login.Base_de_datos_CONEXIONDataSetTableAdapters {
     
     
     /// <summary>
@@ -958,7 +862,7 @@ namespace Login.Base_de_Datos_SoftwareDataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::Login.Properties.Settings.Default.Base_de_Datos_SoftwareConnectionString1;
+            this._connection.ConnectionString = global::Login.Properties.Settings.Default.Base_de_datos_CONEXIONConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -975,7 +879,7 @@ namespace Login.Base_de_Datos_SoftwareDataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(Base_de_Datos_SoftwareDataSet1.UsuarioDataTable dataTable) {
+        public virtual int Fill(Base_de_datos_CONEXIONDataSet.UsuarioDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -988,9 +892,9 @@ namespace Login.Base_de_Datos_SoftwareDataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual Base_de_Datos_SoftwareDataSet1.UsuarioDataTable GetData() {
+        public virtual Base_de_datos_CONEXIONDataSet.UsuarioDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            Base_de_Datos_SoftwareDataSet1.UsuarioDataTable dataTable = new Base_de_Datos_SoftwareDataSet1.UsuarioDataTable();
+            Base_de_datos_CONEXIONDataSet.UsuarioDataTable dataTable = new Base_de_datos_CONEXIONDataSet.UsuarioDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -998,14 +902,14 @@ namespace Login.Base_de_Datos_SoftwareDataSet1TableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(Base_de_Datos_SoftwareDataSet1.UsuarioDataTable dataTable) {
+        public virtual int Update(Base_de_datos_CONEXIONDataSet.UsuarioDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(Base_de_Datos_SoftwareDataSet1 dataSet) {
+        public virtual int Update(Base_de_datos_CONEXIONDataSet dataSet) {
             return this.Adapter.Update(dataSet, "Usuario");
         }
         
@@ -1028,43 +932,23 @@ namespace Login.Base_de_Datos_SoftwareDataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(global::System.Nullable<int> IDUsuario, string Nombre, string Contraseña, global::System.Nullable<bool> Consultar, global::System.Nullable<bool> Registrar, global::System.Nullable<bool> Su) {
-            if ((IDUsuario.HasValue == true)) {
-                this.Adapter.InsertCommand.Parameters[0].Value = ((int)(IDUsuario.Value));
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[0].Value = global::System.DBNull.Value;
-            }
+        public virtual int Insert(int IDUsuario, string Nombre, string Contraseña, bool Consultar, bool Registrar, bool Su) {
+            this.Adapter.InsertCommand.Parameters[0].Value = ((int)(IDUsuario));
             if ((Nombre == null)) {
-                this.Adapter.InsertCommand.Parameters[1].Value = global::System.DBNull.Value;
+                throw new global::System.ArgumentNullException("Nombre");
             }
             else {
                 this.Adapter.InsertCommand.Parameters[1].Value = ((string)(Nombre));
             }
             if ((Contraseña == null)) {
-                this.Adapter.InsertCommand.Parameters[2].Value = global::System.DBNull.Value;
+                throw new global::System.ArgumentNullException("Contraseña");
             }
             else {
                 this.Adapter.InsertCommand.Parameters[2].Value = ((string)(Contraseña));
             }
-            if ((Consultar.HasValue == true)) {
-                this.Adapter.InsertCommand.Parameters[3].Value = ((bool)(Consultar.Value));
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[3].Value = global::System.DBNull.Value;
-            }
-            if ((Registrar.HasValue == true)) {
-                this.Adapter.InsertCommand.Parameters[4].Value = ((bool)(Registrar.Value));
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[4].Value = global::System.DBNull.Value;
-            }
-            if ((Su.HasValue == true)) {
-                this.Adapter.InsertCommand.Parameters[5].Value = ((bool)(Su.Value));
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[5].Value = global::System.DBNull.Value;
-            }
+            this.Adapter.InsertCommand.Parameters[3].Value = ((bool)(Consultar));
+            this.Adapter.InsertCommand.Parameters[4].Value = ((bool)(Registrar));
+            this.Adapter.InsertCommand.Parameters[5].Value = ((bool)(Su));
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
             if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -1173,7 +1057,7 @@ namespace Login.Base_de_Datos_SoftwareDataSet1TableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private int UpdateUpdatedRows(Base_de_Datos_SoftwareDataSet1 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateUpdatedRows(Base_de_datos_CONEXIONDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             if ((this._usuarioTableAdapter != null)) {
                 global::System.Data.DataRow[] updatedRows = dataSet.Usuario.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
@@ -1192,7 +1076,7 @@ namespace Login.Base_de_Datos_SoftwareDataSet1TableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private int UpdateInsertedRows(Base_de_Datos_SoftwareDataSet1 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateInsertedRows(Base_de_datos_CONEXIONDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             if ((this._usuarioTableAdapter != null)) {
                 global::System.Data.DataRow[] addedRows = dataSet.Usuario.Select(null, null, global::System.Data.DataViewRowState.Added);
@@ -1210,7 +1094,7 @@ namespace Login.Base_de_Datos_SoftwareDataSet1TableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private int UpdateDeletedRows(Base_de_Datos_SoftwareDataSet1 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
+        private int UpdateDeletedRows(Base_de_datos_CONEXIONDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
             if ((this._usuarioTableAdapter != null)) {
                 global::System.Data.DataRow[] deletedRows = dataSet.Usuario.Select(null, null, global::System.Data.DataViewRowState.Deleted);
@@ -1252,7 +1136,7 @@ namespace Login.Base_de_Datos_SoftwareDataSet1TableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public virtual int UpdateAll(Base_de_Datos_SoftwareDataSet1 dataSet) {
+        public virtual int UpdateAll(Base_de_datos_CONEXIONDataSet dataSet) {
             if ((dataSet == null)) {
                 throw new global::System.ArgumentNullException("dataSet");
             }

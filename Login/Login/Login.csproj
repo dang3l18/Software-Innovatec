@@ -68,22 +68,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Base_de_Datos_Software2DataSet.Designer.cs">
+    <Compile Include="Base_de_datos_CONEXIONDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>Base_de_Datos_Software2DataSet.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="Base_de_Datos_SoftwareDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Base_de_Datos_SoftwareDataSet.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="Base_de_Datos_SoftwareDataSet1.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Base_de_Datos_SoftwareDataSet1.xsd</DependentUpon>
+      <DependentUpon>Base_de_datos_CONEXIONDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="CONEXION.cs" />
+    <Compile Include="DatosGet.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -125,41 +116,19 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <None Include="Base_de_Datos_Software2DataSet.xsc">
-      <DependentUpon>Base_de_Datos_Software2DataSet.xsd</DependentUpon>
+    <None Include="Base_de_datos_CONEXIONDataSet.xsc">
+      <DependentUpon>Base_de_datos_CONEXIONDataSet.xsd</DependentUpon>
     </None>
-    <None Include="Base_de_Datos_Software2DataSet.xsd">
+    <None Include="Base_de_datos_CONEXIONDataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>Base_de_Datos_Software2DataSet.Designer.cs</LastGenOutput>
+      <LastGenOutput>Base_de_datos_CONEXIONDataSet.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="Base_de_Datos_Software2DataSet.xss">
-      <DependentUpon>Base_de_Datos_Software2DataSet.xsd</DependentUpon>
-    </None>
-    <None Include="Base_de_Datos_SoftwareDataSet.xsc">
-      <DependentUpon>Base_de_Datos_SoftwareDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="Base_de_Datos_SoftwareDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>Base_de_Datos_SoftwareDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Base_de_Datos_SoftwareDataSet.xss">
-      <DependentUpon>Base_de_Datos_SoftwareDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="Base_de_Datos_SoftwareDataSet1.xsc">
-      <DependentUpon>Base_de_Datos_SoftwareDataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="Base_de_Datos_SoftwareDataSet1.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>Base_de_Datos_SoftwareDataSet1.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Base_de_Datos_SoftwareDataSet1.xss">
-      <DependentUpon>Base_de_Datos_SoftwareDataSet1.xsd</DependentUpon>
+    <None Include="Base_de_datos_CONEXIONDataSet.xss">
+      <DependentUpon>Base_de_datos_CONEXIONDataSet.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
-      <Generator>SettingsSingleFileGenerator</Generator>
+      <Generator>PublicSettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
     <Compile Include="Properties\Settings.Designer.cs">
@@ -200,15 +169,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\minimizar-signo %281%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Base de Datos Software.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Base de Datos Software_log.ldf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <DependentUpon>Base de Datos Software.mdf</DependentUpon>
-    </Content>
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">

@@ -11,7 +11,7 @@ namespace Login
 {
    public  class CONEXION
     {
-         public static SqlConnection Conn = new SqlConnection("Data Source=DESKTOP-D66FKKU\\DANGELMSSQL;Initial Catalog=Base_de_Datos_Software2;Integrated Security=True");
+         public static SqlConnection Conn = new SqlConnection("Data Source=DESKTOP-D66FKKU\\DANGEL;Initial Catalog=Base_de_datos_CONEXION;Persist Security Info=True;User ID=sa;Password=dang3l18112007");
 
         public static SqlConnection obtenerconexión()
         {

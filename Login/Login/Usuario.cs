@@ -17,7 +17,7 @@ namespace Login
             try
             {
                 CONEXION.opencon();
-                SqlCommand comando = new SqlCommand(string.Format("Insert into Usuarios(Nombre, Contraseña, Consultar, Registrar, Su ) values ('{0}', '{1}', '{2}', '{3}', '{4}',)",
+                SqlCommand comando = new SqlCommand(string.Format("Insert into Usuario(Nombre, Contraseña, Consultar, Registrar, Su ) values ('{0}', '{1}', '{2}', '{3}', '{4}',)",
                     pUsuario, PContraseña, Consultar, Registrar, Su), CONEXION.obtenerconexión());
 
                 resultado = comando.ExecuteNonQuery();
