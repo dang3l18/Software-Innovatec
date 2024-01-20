@@ -31,7 +31,9 @@ namespace Login
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Interfaz));
             this.PanelDesktop = new Bunifu.Framework.UI.BunifuGradientPanel();
-            this.Paneltitlebar = new Bunifu.Framework.UI.BunifuGradientPanel();
+            this.Paneltitlebar_MouseDown = new Bunifu.Framework.UI.BunifuGradientPanel();
+            this.IconMaximizar = new System.Windows.Forms.PictureBox();
+            this.IconRestaurar = new System.Windows.Forms.PictureBox();
             this.IconMinimizar = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.Panelmenu = new Bunifu.Framework.UI.BunifuGradientPanel();
@@ -41,15 +43,13 @@ namespace Login
             this.bunifuFlatButton3 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuFlatButton2 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuFlatButton1 = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.IconRestaurar = new System.Windows.Forms.PictureBox();
-            this.IconMaximizar = new System.Windows.Forms.PictureBox();
-            this.Paneltitlebar.SuspendLayout();
+            this.Paneltitlebar_MouseDown.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.IconMaximizar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.IconRestaurar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.IconMinimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.Panelmenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnBarramenu)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.IconRestaurar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.IconMaximizar)).BeginInit();
             this.SuspendLayout();
             // 
             // PanelDesktop
@@ -64,33 +64,64 @@ namespace Login
             this.PanelDesktop.Location = new System.Drawing.Point(230, 60);
             this.PanelDesktop.Name = "PanelDesktop";
             this.PanelDesktop.Quality = 10;
-            this.PanelDesktop.Size = new System.Drawing.Size(1054, 551);
+            this.PanelDesktop.Size = new System.Drawing.Size(1008, 551);
             this.PanelDesktop.TabIndex = 2;
+            this.PanelDesktop.Paint += new System.Windows.Forms.PaintEventHandler(this.PanelDesktop_Paint);
             // 
-            // Paneltitlebar
+            // Paneltitlebar_MouseDown
             // 
-            this.Paneltitlebar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Paneltitlebar.BackgroundImage")));
-            this.Paneltitlebar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Paneltitlebar.Controls.Add(this.IconMaximizar);
-            this.Paneltitlebar.Controls.Add(this.IconRestaurar);
-            this.Paneltitlebar.Controls.Add(this.IconMinimizar);
-            this.Paneltitlebar.Controls.Add(this.pictureBox1);
-            this.Paneltitlebar.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Paneltitlebar.GradientBottomLeft = System.Drawing.Color.White;
-            this.Paneltitlebar.GradientBottomRight = System.Drawing.Color.White;
-            this.Paneltitlebar.GradientTopLeft = System.Drawing.Color.White;
-            this.Paneltitlebar.GradientTopRight = System.Drawing.Color.White;
-            this.Paneltitlebar.Location = new System.Drawing.Point(230, 0);
-            this.Paneltitlebar.Name = "Paneltitlebar";
-            this.Paneltitlebar.Quality = 10;
-            this.Paneltitlebar.Size = new System.Drawing.Size(1054, 60);
-            this.Paneltitlebar.TabIndex = 1;
+            this.Paneltitlebar_MouseDown.BackColor = System.Drawing.Color.White;
+            this.Paneltitlebar_MouseDown.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Paneltitlebar_MouseDown.BackgroundImage")));
+            this.Paneltitlebar_MouseDown.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Paneltitlebar_MouseDown.Controls.Add(this.IconMaximizar);
+            this.Paneltitlebar_MouseDown.Controls.Add(this.IconRestaurar);
+            this.Paneltitlebar_MouseDown.Controls.Add(this.IconMinimizar);
+            this.Paneltitlebar_MouseDown.Controls.Add(this.pictureBox1);
+            this.Paneltitlebar_MouseDown.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Paneltitlebar_MouseDown.GradientBottomLeft = System.Drawing.Color.White;
+            this.Paneltitlebar_MouseDown.GradientBottomRight = System.Drawing.Color.White;
+            this.Paneltitlebar_MouseDown.GradientTopLeft = System.Drawing.Color.White;
+            this.Paneltitlebar_MouseDown.GradientTopRight = System.Drawing.Color.White;
+            this.Paneltitlebar_MouseDown.Location = new System.Drawing.Point(230, 0);
+            this.Paneltitlebar_MouseDown.Name = "Paneltitlebar_MouseDown";
+            this.Paneltitlebar_MouseDown.Quality = 10;
+            this.Paneltitlebar_MouseDown.Size = new System.Drawing.Size(1008, 60);
+            this.Paneltitlebar_MouseDown.TabIndex = 1;
+            this.Paneltitlebar_MouseDown.Paint += new System.Windows.Forms.PaintEventHandler(this.Paneltitlebar_MouseDown_Paint);
+            this.Paneltitlebar_MouseDown.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Paneltitlebar_MouseDown_MouseDown);
+            // 
+            // IconMaximizar
+            // 
+            this.IconMaximizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.IconMaximizar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.IconMaximizar.Image = global::Login.Properties.Resources.maximizar_real;
+            this.IconMaximizar.Location = new System.Drawing.Point(940, 3);
+            this.IconMaximizar.Name = "IconMaximizar";
+            this.IconMaximizar.Size = new System.Drawing.Size(20, 20);
+            this.IconMaximizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.IconMaximizar.TabIndex = 5;
+            this.IconMaximizar.TabStop = false;
+            this.IconMaximizar.Click += new System.EventHandler(this.IconMaximizar_Click);
+            // 
+            // IconRestaurar
+            // 
+            this.IconRestaurar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.IconRestaurar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.IconRestaurar.Image = global::Login.Properties.Resources.maximizar;
+            this.IconRestaurar.Location = new System.Drawing.Point(940, 3);
+            this.IconRestaurar.Name = "IconRestaurar";
+            this.IconRestaurar.Size = new System.Drawing.Size(20, 20);
+            this.IconRestaurar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.IconRestaurar.TabIndex = 4;
+            this.IconRestaurar.TabStop = false;
+            this.IconRestaurar.Click += new System.EventHandler(this.IconRestaurar_Click);
             // 
             // IconMinimizar
             // 
+            this.IconMinimizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.IconMinimizar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.IconMinimizar.Image = global::Login.Properties.Resources.minimizar_signo__1_;
-            this.IconMinimizar.Location = new System.Drawing.Point(948, 3);
+            this.IconMinimizar.Location = new System.Drawing.Point(902, 3);
             this.IconMinimizar.Name = "IconMinimizar";
             this.IconMinimizar.Size = new System.Drawing.Size(20, 20);
             this.IconMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -100,9 +131,10 @@ namespace Login
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox1.Image = global::Login.Properties.Resources.cerrar;
-            this.pictureBox1.Location = new System.Drawing.Point(1022, 3);
+            this.pictureBox1.Location = new System.Drawing.Point(976, 3);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(20, 20);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -147,7 +179,7 @@ namespace Login
             // 
             // bunifuFlatButton5
             // 
-            this.bunifuFlatButton5.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.bunifuFlatButton5.Activecolor = System.Drawing.Color.White;
             this.bunifuFlatButton5.BackColor = System.Drawing.Color.White;
             this.bunifuFlatButton5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.bunifuFlatButton5.BorderRadius = 0;
@@ -181,7 +213,7 @@ namespace Login
             // 
             // bunifuFlatButton4
             // 
-            this.bunifuFlatButton4.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.bunifuFlatButton4.Activecolor = System.Drawing.Color.White;
             this.bunifuFlatButton4.BackColor = System.Drawing.Color.White;
             this.bunifuFlatButton4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.bunifuFlatButton4.BorderRadius = 0;
@@ -215,7 +247,7 @@ namespace Login
             // 
             // bunifuFlatButton3
             // 
-            this.bunifuFlatButton3.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.bunifuFlatButton3.Activecolor = System.Drawing.Color.White;
             this.bunifuFlatButton3.BackColor = System.Drawing.Color.White;
             this.bunifuFlatButton3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.bunifuFlatButton3.BorderRadius = 0;
@@ -249,7 +281,7 @@ namespace Login
             // 
             // bunifuFlatButton2
             // 
-            this.bunifuFlatButton2.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.bunifuFlatButton2.Activecolor = System.Drawing.Color.White;
             this.bunifuFlatButton2.BackColor = System.Drawing.Color.White;
             this.bunifuFlatButton2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.bunifuFlatButton2.BorderRadius = 0;
@@ -283,7 +315,7 @@ namespace Login
             // 
             // bunifuFlatButton1
             // 
-            this.bunifuFlatButton1.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.bunifuFlatButton1.Activecolor = System.Drawing.Color.White;
             this.bunifuFlatButton1.BackColor = System.Drawing.Color.White;
             this.bunifuFlatButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.bunifuFlatButton1.BorderRadius = 0;
@@ -315,48 +347,25 @@ namespace Login
             this.bunifuFlatButton1.Textcolor = System.Drawing.Color.Black;
             this.bunifuFlatButton1.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
-            // IconRestaurar
-            // 
-            this.IconRestaurar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.IconRestaurar.Image = global::Login.Properties.Resources.maximizar;
-            this.IconRestaurar.Location = new System.Drawing.Point(986, 3);
-            this.IconRestaurar.Name = "IconRestaurar";
-            this.IconRestaurar.Size = new System.Drawing.Size(20, 20);
-            this.IconRestaurar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.IconRestaurar.TabIndex = 4;
-            this.IconRestaurar.TabStop = false;
-            this.IconRestaurar.Click += new System.EventHandler(this.IconRestaurar_Click);
-            // 
-            // IconMaximizar
-            // 
-            this.IconMaximizar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.IconMaximizar.Image = global::Login.Properties.Resources.maximizar_real;
-            this.IconMaximizar.Location = new System.Drawing.Point(986, 3);
-            this.IconMaximizar.Name = "IconMaximizar";
-            this.IconMaximizar.Size = new System.Drawing.Size(20, 20);
-            this.IconMaximizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.IconMaximizar.TabIndex = 5;
-            this.IconMaximizar.TabStop = false;
-            this.IconMaximizar.Click += new System.EventHandler(this.IconMaximizar_Click);
-            // 
             // Interfaz
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1284, 611);
+            this.ClientSize = new System.Drawing.Size(1238, 611);
             this.Controls.Add(this.PanelDesktop);
-            this.Controls.Add(this.Paneltitlebar);
+            this.Controls.Add(this.Paneltitlebar_MouseDown);
             this.Controls.Add(this.Panelmenu);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Interfaz";
             this.Text = "Interfaz";
-            this.Paneltitlebar.ResumeLayout(false);
+            this.Load += new System.EventHandler(this.Interfaz_Load);
+            this.Paneltitlebar_MouseDown.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.IconMaximizar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.IconRestaurar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.IconMinimizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.Panelmenu.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.btnBarramenu)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.IconRestaurar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.IconMaximizar)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -364,7 +373,7 @@ namespace Login
         #endregion
 
         private Bunifu.Framework.UI.BunifuGradientPanel Panelmenu;
-        private Bunifu.Framework.UI.BunifuGradientPanel Paneltitlebar;
+        private Bunifu.Framework.UI.BunifuGradientPanel Paneltitlebar_MouseDown;
         private Bunifu.Framework.UI.BunifuGradientPanel PanelDesktop;
         private Bunifu.Framework.UI.BunifuImageButton btnBarramenu;
         private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton5;
