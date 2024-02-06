@@ -16,5 +16,13 @@ namespace Login
         {
             InitializeComponent();
         }
+
+        private void btnInicio_Click(object sender, EventArgs e)
+        {
+            Form principal = new Interfaz();
+            principal.Show();
+            principal.Visible = true;
+            Visible = false;
+        }
     }
 }

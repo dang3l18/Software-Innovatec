@@ -102,5 +102,21 @@ namespace Login
         {
 
         }
+
+        private void bunifuFlatButton1_Click(object sender, EventArgs e)
+        {
+            Form principal = new Inventario();
+            principal.Show();
+            principal.Visible = true;
+            Visible = false;
+        }
+
+        private void bunifuFlatButton2_Click(object sender, EventArgs e)
+        {
+            Form principal = new Facturacion();
+            principal.Show();
+            principal.Visible = true;
+            Visible = false;
+        }
     }
 }
