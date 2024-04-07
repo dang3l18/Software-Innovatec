@@ -39,5 +39,15 @@ namespace Login
             principal.Visible = true;
             Visible = false;
         }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox12_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

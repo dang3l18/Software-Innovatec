@@ -24,5 +24,10 @@ namespace Login
             principal.Visible = true;
             Visible = false;
         }
+
+        private void textBox6_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
