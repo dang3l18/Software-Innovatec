@@ -34,6 +34,17 @@ namespace Login
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.bunifuGradientPanel2 = new Bunifu.Framework.UI.BunifuGradientPanel();
+            this.bunifuCustomTextbox9 = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
+            this.bunifuCustomTextbox8 = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
+            this.bunifuCustomTextbox7 = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
+            this.bunifuCustomTextbox6 = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
+            this.bunifuCustomTextbox5 = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
+            this.bunifuCustomTextbox4 = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
+            this.bunifuCustomTextbox3 = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
+            this.bunifuCustomTextbox2 = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
+            this.txtBuscar = new Bunifu.Framework.UI.BunifuTextbox();
+            this.bunifuCustomTextbox1 = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
+            this.bunifuCustomDataGrid1 = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.label15 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
@@ -65,22 +76,10 @@ namespace Login
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.bunifuCustomDataGrid1 = new Bunifu.Framework.UI.BunifuCustomDataGrid();
-            this.bunifuCustomTextbox1 = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
-            this.txtBuscar = new Bunifu.Framework.UI.BunifuTextbox();
-            this.txtBuscar2 = new Bunifu.Framework.UI.BunifuTextbox();
-            this.bunifuCustomTextbox2 = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
-            this.bunifuCustomTextbox3 = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
-            this.bunifuCustomTextbox4 = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
-            this.bunifuCustomTextbox5 = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
-            this.bunifuCustomTextbox6 = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
-            this.bunifuCustomTextbox7 = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
-            this.bunifuCustomTextbox8 = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
-            this.bunifuCustomTextbox9 = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
             this.bunifuGradientPanel1.SuspendLayout();
             this.bunifuGradientPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // bunifuGradientPanel1
@@ -127,7 +126,6 @@ namespace Login
             this.bunifuGradientPanel2.Controls.Add(this.bunifuCustomTextbox4);
             this.bunifuGradientPanel2.Controls.Add(this.bunifuCustomTextbox3);
             this.bunifuGradientPanel2.Controls.Add(this.bunifuCustomTextbox2);
-            this.bunifuGradientPanel2.Controls.Add(this.txtBuscar2);
             this.bunifuGradientPanel2.Controls.Add(this.txtBuscar);
             this.bunifuGradientPanel2.Controls.Add(this.bunifuCustomTextbox1);
             this.bunifuGradientPanel2.Controls.Add(this.bunifuCustomDataGrid1);
@@ -156,6 +154,127 @@ namespace Login
             this.bunifuGradientPanel2.Quality = 50;
             this.bunifuGradientPanel2.Size = new System.Drawing.Size(1300, 650);
             this.bunifuGradientPanel2.TabIndex = 28;
+            // 
+            // bunifuCustomTextbox9
+            // 
+            this.bunifuCustomTextbox9.BorderColor = System.Drawing.Color.Black;
+            this.bunifuCustomTextbox9.Location = new System.Drawing.Point(1020, 428);
+            this.bunifuCustomTextbox9.Multiline = true;
+            this.bunifuCustomTextbox9.Name = "bunifuCustomTextbox9";
+            this.bunifuCustomTextbox9.Size = new System.Drawing.Size(192, 22);
+            this.bunifuCustomTextbox9.TabIndex = 84;
+            // 
+            // bunifuCustomTextbox8
+            // 
+            this.bunifuCustomTextbox8.BorderColor = System.Drawing.Color.Black;
+            this.bunifuCustomTextbox8.Location = new System.Drawing.Point(1020, 383);
+            this.bunifuCustomTextbox8.Multiline = true;
+            this.bunifuCustomTextbox8.Name = "bunifuCustomTextbox8";
+            this.bunifuCustomTextbox8.Size = new System.Drawing.Size(192, 22);
+            this.bunifuCustomTextbox8.TabIndex = 83;
+            // 
+            // bunifuCustomTextbox7
+            // 
+            this.bunifuCustomTextbox7.BorderColor = System.Drawing.Color.Black;
+            this.bunifuCustomTextbox7.Location = new System.Drawing.Point(1020, 331);
+            this.bunifuCustomTextbox7.Multiline = true;
+            this.bunifuCustomTextbox7.Name = "bunifuCustomTextbox7";
+            this.bunifuCustomTextbox7.Size = new System.Drawing.Size(192, 22);
+            this.bunifuCustomTextbox7.TabIndex = 82;
+            // 
+            // bunifuCustomTextbox6
+            // 
+            this.bunifuCustomTextbox6.BorderColor = System.Drawing.Color.Black;
+            this.bunifuCustomTextbox6.Location = new System.Drawing.Point(1020, 288);
+            this.bunifuCustomTextbox6.Multiline = true;
+            this.bunifuCustomTextbox6.Name = "bunifuCustomTextbox6";
+            this.bunifuCustomTextbox6.Size = new System.Drawing.Size(192, 22);
+            this.bunifuCustomTextbox6.TabIndex = 81;
+            // 
+            // bunifuCustomTextbox5
+            // 
+            this.bunifuCustomTextbox5.BorderColor = System.Drawing.Color.Black;
+            this.bunifuCustomTextbox5.Location = new System.Drawing.Point(1020, 251);
+            this.bunifuCustomTextbox5.Multiline = true;
+            this.bunifuCustomTextbox5.Name = "bunifuCustomTextbox5";
+            this.bunifuCustomTextbox5.Size = new System.Drawing.Size(192, 22);
+            this.bunifuCustomTextbox5.TabIndex = 80;
+            // 
+            // bunifuCustomTextbox4
+            // 
+            this.bunifuCustomTextbox4.BorderColor = System.Drawing.Color.Black;
+            this.bunifuCustomTextbox4.Location = new System.Drawing.Point(1020, 201);
+            this.bunifuCustomTextbox4.Multiline = true;
+            this.bunifuCustomTextbox4.Name = "bunifuCustomTextbox4";
+            this.bunifuCustomTextbox4.Size = new System.Drawing.Size(192, 22);
+            this.bunifuCustomTextbox4.TabIndex = 79;
+            // 
+            // bunifuCustomTextbox3
+            // 
+            this.bunifuCustomTextbox3.BorderColor = System.Drawing.Color.Black;
+            this.bunifuCustomTextbox3.Location = new System.Drawing.Point(1020, 148);
+            this.bunifuCustomTextbox3.Multiline = true;
+            this.bunifuCustomTextbox3.Name = "bunifuCustomTextbox3";
+            this.bunifuCustomTextbox3.Size = new System.Drawing.Size(192, 22);
+            this.bunifuCustomTextbox3.TabIndex = 78;
+            // 
+            // bunifuCustomTextbox2
+            // 
+            this.bunifuCustomTextbox2.BorderColor = System.Drawing.Color.Black;
+            this.bunifuCustomTextbox2.Location = new System.Drawing.Point(1020, 101);
+            this.bunifuCustomTextbox2.Multiline = true;
+            this.bunifuCustomTextbox2.Name = "bunifuCustomTextbox2";
+            this.bunifuCustomTextbox2.Size = new System.Drawing.Size(192, 22);
+            this.bunifuCustomTextbox2.TabIndex = 77;
+            // 
+            // txtBuscar
+            // 
+            this.txtBuscar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtBuscar.BackColor = System.Drawing.Color.Silver;
+            this.txtBuscar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txtBuscar.BackgroundImage")));
+            this.txtBuscar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.txtBuscar.ForeColor = System.Drawing.Color.Black;
+            this.txtBuscar.Icon = ((System.Drawing.Image)(resources.GetObject("txtBuscar.Icon")));
+            this.txtBuscar.Location = new System.Drawing.Point(40, 26);
+            this.txtBuscar.Name = "txtBuscar";
+            this.txtBuscar.Size = new System.Drawing.Size(354, 28);
+            this.txtBuscar.TabIndex = 75;
+            this.txtBuscar.text = "Codigo";
+            // 
+            // bunifuCustomTextbox1
+            // 
+            this.bunifuCustomTextbox1.BorderColor = System.Drawing.Color.Black;
+            this.bunifuCustomTextbox1.Location = new System.Drawing.Point(1020, 50);
+            this.bunifuCustomTextbox1.Multiline = true;
+            this.bunifuCustomTextbox1.Name = "bunifuCustomTextbox1";
+            this.bunifuCustomTextbox1.Size = new System.Drawing.Size(192, 22);
+            this.bunifuCustomTextbox1.TabIndex = 72;
+            // 
+            // bunifuCustomDataGrid1
+            // 
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.bunifuCustomDataGrid1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.bunifuCustomDataGrid1.BackgroundColor = System.Drawing.Color.Gainsboro;
+            this.bunifuCustomDataGrid1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.bunifuCustomDataGrid1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.SeaGreen;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.SeaGreen;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.bunifuCustomDataGrid1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.bunifuCustomDataGrid1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.bunifuCustomDataGrid1.DoubleBuffered = true;
+            this.bunifuCustomDataGrid1.EnableHeadersVisualStyles = false;
+            this.bunifuCustomDataGrid1.HeaderBgColor = System.Drawing.Color.SeaGreen;
+            this.bunifuCustomDataGrid1.HeaderForeColor = System.Drawing.Color.SeaGreen;
+            this.bunifuCustomDataGrid1.Location = new System.Drawing.Point(40, 68);
+            this.bunifuCustomDataGrid1.Name = "bunifuCustomDataGrid1";
+            this.bunifuCustomDataGrid1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.bunifuCustomDataGrid1.Size = new System.Drawing.Size(786, 352);
+            this.bunifuCustomDataGrid1.TabIndex = 71;
             // 
             // label15
             // 
@@ -218,7 +337,7 @@ namespace Login
             this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(593, 469);
+            this.button1.Location = new System.Drawing.Point(610, 509);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(119, 35);
             this.button1.TabIndex = 27;
@@ -230,7 +349,7 @@ namespace Login
             this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(297, 468);
+            this.button2.Location = new System.Drawing.Point(314, 508);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(119, 35);
             this.button2.TabIndex = 26;
@@ -242,7 +361,7 @@ namespace Login
             this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(439, 468);
+            this.button3.Location = new System.Drawing.Point(456, 508);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(119, 35);
             this.button3.TabIndex = 25;
@@ -254,7 +373,7 @@ namespace Login
             this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(161, 467);
+            this.button4.Location = new System.Drawing.Point(178, 507);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(119, 37);
             this.button4.TabIndex = 24;
@@ -266,7 +385,7 @@ namespace Login
             this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(24, 467);
+            this.button5.Location = new System.Drawing.Point(41, 507);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(119, 35);
             this.button5.TabIndex = 23;
@@ -492,139 +611,6 @@ namespace Login
             this.dataGridView1.Size = new System.Drawing.Size(831, 316);
             this.dataGridView1.TabIndex = 0;
             // 
-            // bunifuCustomDataGrid1
-            // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.bunifuCustomDataGrid1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.bunifuCustomDataGrid1.BackgroundColor = System.Drawing.Color.Gainsboro;
-            this.bunifuCustomDataGrid1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.bunifuCustomDataGrid1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.bunifuCustomDataGrid1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.bunifuCustomDataGrid1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.bunifuCustomDataGrid1.DoubleBuffered = true;
-            this.bunifuCustomDataGrid1.EnableHeadersVisualStyles = false;
-            this.bunifuCustomDataGrid1.HeaderBgColor = System.Drawing.Color.SeaGreen;
-            this.bunifuCustomDataGrid1.HeaderForeColor = System.Drawing.Color.SeaGreen;
-            this.bunifuCustomDataGrid1.Location = new System.Drawing.Point(40, 68);
-            this.bunifuCustomDataGrid1.Name = "bunifuCustomDataGrid1";
-            this.bunifuCustomDataGrid1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.bunifuCustomDataGrid1.Size = new System.Drawing.Size(786, 352);
-            this.bunifuCustomDataGrid1.TabIndex = 71;
-            // 
-            // bunifuCustomTextbox1
-            // 
-            this.bunifuCustomTextbox1.BorderColor = System.Drawing.Color.Black;
-            this.bunifuCustomTextbox1.Location = new System.Drawing.Point(1020, 50);
-            this.bunifuCustomTextbox1.Multiline = true;
-            this.bunifuCustomTextbox1.Name = "bunifuCustomTextbox1";
-            this.bunifuCustomTextbox1.Size = new System.Drawing.Size(192, 22);
-            this.bunifuCustomTextbox1.TabIndex = 72;
-            // 
-            // txtBuscar
-            // 
-            this.txtBuscar.BackColor = System.Drawing.Color.Silver;
-            this.txtBuscar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txtBuscar.BackgroundImage")));
-            this.txtBuscar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.txtBuscar.ForeColor = System.Drawing.Color.Black;
-            this.txtBuscar.Icon = ((System.Drawing.Image)(resources.GetObject("txtBuscar.Icon")));
-            this.txtBuscar.Location = new System.Drawing.Point(40, 26);
-            this.txtBuscar.Name = "txtBuscar";
-            this.txtBuscar.Size = new System.Drawing.Size(216, 28);
-            this.txtBuscar.TabIndex = 75;
-            this.txtBuscar.text = "Codigo";
-            // 
-            // txtBuscar2
-            // 
-            this.txtBuscar2.BackColor = System.Drawing.Color.Silver;
-            this.txtBuscar2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txtBuscar2.BackgroundImage")));
-            this.txtBuscar2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.txtBuscar2.ForeColor = System.Drawing.Color.Black;
-            this.txtBuscar2.Icon = ((System.Drawing.Image)(resources.GetObject("txtBuscar2.Icon")));
-            this.txtBuscar2.Location = new System.Drawing.Point(306, 26);
-            this.txtBuscar2.Name = "txtBuscar2";
-            this.txtBuscar2.Size = new System.Drawing.Size(216, 28);
-            this.txtBuscar2.TabIndex = 76;
-            this.txtBuscar2.text = "Nombre";
-            // 
-            // bunifuCustomTextbox2
-            // 
-            this.bunifuCustomTextbox2.BorderColor = System.Drawing.Color.Black;
-            this.bunifuCustomTextbox2.Location = new System.Drawing.Point(1020, 101);
-            this.bunifuCustomTextbox2.Multiline = true;
-            this.bunifuCustomTextbox2.Name = "bunifuCustomTextbox2";
-            this.bunifuCustomTextbox2.Size = new System.Drawing.Size(192, 22);
-            this.bunifuCustomTextbox2.TabIndex = 77;
-            // 
-            // bunifuCustomTextbox3
-            // 
-            this.bunifuCustomTextbox3.BorderColor = System.Drawing.Color.Black;
-            this.bunifuCustomTextbox3.Location = new System.Drawing.Point(1020, 148);
-            this.bunifuCustomTextbox3.Multiline = true;
-            this.bunifuCustomTextbox3.Name = "bunifuCustomTextbox3";
-            this.bunifuCustomTextbox3.Size = new System.Drawing.Size(192, 22);
-            this.bunifuCustomTextbox3.TabIndex = 78;
-            // 
-            // bunifuCustomTextbox4
-            // 
-            this.bunifuCustomTextbox4.BorderColor = System.Drawing.Color.Black;
-            this.bunifuCustomTextbox4.Location = new System.Drawing.Point(1020, 201);
-            this.bunifuCustomTextbox4.Multiline = true;
-            this.bunifuCustomTextbox4.Name = "bunifuCustomTextbox4";
-            this.bunifuCustomTextbox4.Size = new System.Drawing.Size(192, 22);
-            this.bunifuCustomTextbox4.TabIndex = 79;
-            // 
-            // bunifuCustomTextbox5
-            // 
-            this.bunifuCustomTextbox5.BorderColor = System.Drawing.Color.Black;
-            this.bunifuCustomTextbox5.Location = new System.Drawing.Point(1020, 251);
-            this.bunifuCustomTextbox5.Multiline = true;
-            this.bunifuCustomTextbox5.Name = "bunifuCustomTextbox5";
-            this.bunifuCustomTextbox5.Size = new System.Drawing.Size(192, 22);
-            this.bunifuCustomTextbox5.TabIndex = 80;
-            // 
-            // bunifuCustomTextbox6
-            // 
-            this.bunifuCustomTextbox6.BorderColor = System.Drawing.Color.Black;
-            this.bunifuCustomTextbox6.Location = new System.Drawing.Point(1020, 288);
-            this.bunifuCustomTextbox6.Multiline = true;
-            this.bunifuCustomTextbox6.Name = "bunifuCustomTextbox6";
-            this.bunifuCustomTextbox6.Size = new System.Drawing.Size(192, 22);
-            this.bunifuCustomTextbox6.TabIndex = 81;
-            // 
-            // bunifuCustomTextbox7
-            // 
-            this.bunifuCustomTextbox7.BorderColor = System.Drawing.Color.Black;
-            this.bunifuCustomTextbox7.Location = new System.Drawing.Point(1020, 331);
-            this.bunifuCustomTextbox7.Multiline = true;
-            this.bunifuCustomTextbox7.Name = "bunifuCustomTextbox7";
-            this.bunifuCustomTextbox7.Size = new System.Drawing.Size(192, 22);
-            this.bunifuCustomTextbox7.TabIndex = 82;
-            // 
-            // bunifuCustomTextbox8
-            // 
-            this.bunifuCustomTextbox8.BorderColor = System.Drawing.Color.Black;
-            this.bunifuCustomTextbox8.Location = new System.Drawing.Point(1020, 383);
-            this.bunifuCustomTextbox8.Multiline = true;
-            this.bunifuCustomTextbox8.Name = "bunifuCustomTextbox8";
-            this.bunifuCustomTextbox8.Size = new System.Drawing.Size(192, 22);
-            this.bunifuCustomTextbox8.TabIndex = 83;
-            // 
-            // bunifuCustomTextbox9
-            // 
-            this.bunifuCustomTextbox9.BorderColor = System.Drawing.Color.Black;
-            this.bunifuCustomTextbox9.Location = new System.Drawing.Point(1020, 428);
-            this.bunifuCustomTextbox9.Multiline = true;
-            this.bunifuCustomTextbox9.Name = "bunifuCustomTextbox9";
-            this.bunifuCustomTextbox9.Size = new System.Drawing.Size(192, 22);
-            this.bunifuCustomTextbox9.TabIndex = 84;
-            // 
             // Inventario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -638,8 +624,8 @@ namespace Login
             this.bunifuGradientPanel1.PerformLayout();
             this.bunifuGradientPanel2.ResumeLayout(false);
             this.bunifuGradientPanel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -679,7 +665,6 @@ namespace Login
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label15;
-        private Bunifu.Framework.UI.BunifuTextbox txtBuscar2;
         private Bunifu.Framework.UI.BunifuTextbox txtBuscar;
         private WindowsFormsControlLibrary1.BunifuCustomTextbox bunifuCustomTextbox1;
         private Bunifu.Framework.UI.BunifuCustomDataGrid bunifuCustomDataGrid1;
