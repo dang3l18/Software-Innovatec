@@ -68,10 +68,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Base_de_datos_CONEXIONDataSet.Designer.cs">
+    <Compile Include="Base_de_datos_innovatecDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>Base_de_datos_CONEXIONDataSet.xsd</DependentUpon>
+      <DependentUpon>Base_de_datos_innovatecDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="CONEXION.cs" />
     <Compile Include="DatosGet.cs" />
@@ -99,6 +99,7 @@
     <Compile Include="Inventario.Designer.cs">
       <DependentUpon>Inventario.cs</DependentUpon>
     </Compile>
+    <Compile Include="Metodos.cs" />
     <Compile Include="PERMISOS.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -114,11 +115,11 @@
     <Compile Include="Reparaciones.Designer.cs">
       <DependentUpon>Reparaciones.cs</DependentUpon>
     </Compile>
-    <Compile Include="Transacciones.cs">
+    <Compile Include="Registro de ventas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Transacciones.Designer.cs">
-      <DependentUpon>Transacciones.cs</DependentUpon>
+    <Compile Include="Registro de ventas.Designer.cs">
+      <DependentUpon>Registro de ventas.cs</DependentUpon>
     </Compile>
     <Compile Include="Usuario.cs" />
     <EmbeddedResource Include="Facturacion.resx">
@@ -149,19 +150,19 @@
     <EmbeddedResource Include="Reparaciones.resx">
       <DependentUpon>Reparaciones.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Transacciones.resx">
-      <DependentUpon>Transacciones.cs</DependentUpon>
+    <EmbeddedResource Include="Registro de ventas.resx">
+      <DependentUpon>Registro de ventas.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="Base_de_datos_CONEXIONDataSet.xsc">
-      <DependentUpon>Base_de_datos_CONEXIONDataSet.xsd</DependentUpon>
+    <None Include="Base_de_datos_innovatecDataSet.xsc">
+      <DependentUpon>Base_de_datos_innovatecDataSet.xsd</DependentUpon>
     </None>
-    <None Include="Base_de_datos_CONEXIONDataSet.xsd">
+    <None Include="Base_de_datos_innovatecDataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>Base_de_datos_CONEXIONDataSet.Designer.cs</LastGenOutput>
+      <LastGenOutput>Base_de_datos_innovatecDataSet.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="Base_de_datos_CONEXIONDataSet.xss">
-      <DependentUpon>Base_de_datos_CONEXIONDataSet.xsd</DependentUpon>
+    <None Include="Base_de_datos_innovatecDataSet.xss">
+      <DependentUpon>Base_de_datos_innovatecDataSet.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>PublicSettingsSingleFileGenerator</Generator>

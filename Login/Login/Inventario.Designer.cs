@@ -34,13 +34,11 @@ namespace Login
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.bunifuGradientPanel2 = new Bunifu.Framework.UI.BunifuGradientPanel();
+            this.btnBuscar = new System.Windows.Forms.Button();
             this.bunifuCustomTextbox9 = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
             this.bunifuCustomTextbox8 = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
             this.bunifuCustomTextbox7 = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
             this.bunifuCustomTextbox6 = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
-            this.bunifuCustomTextbox5 = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
-            this.bunifuCustomTextbox4 = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
-            this.bunifuCustomTextbox3 = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
             this.bunifuCustomTextbox2 = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
             this.txtBuscar = new Bunifu.Framework.UI.BunifuTextbox();
             this.bunifuCustomTextbox1 = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
@@ -48,17 +46,13 @@ namespace Login
             this.label15 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.btnInicio = new System.Windows.Forms.Button();
             this.btnModificar = new System.Windows.Forms.Button();
@@ -76,6 +70,8 @@ namespace Login
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.label9 = new System.Windows.Forms.Label();
+            this.bunifuCustomTextbox3 = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
             this.bunifuGradientPanel1.SuspendLayout();
             this.bunifuGradientPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid1)).BeginInit();
@@ -118,13 +114,13 @@ namespace Login
             // 
             this.bunifuGradientPanel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel2.BackgroundImage")));
             this.bunifuGradientPanel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuGradientPanel2.Controls.Add(this.bunifuCustomTextbox3);
+            this.bunifuGradientPanel2.Controls.Add(this.label9);
+            this.bunifuGradientPanel2.Controls.Add(this.btnBuscar);
             this.bunifuGradientPanel2.Controls.Add(this.bunifuCustomTextbox9);
             this.bunifuGradientPanel2.Controls.Add(this.bunifuCustomTextbox8);
             this.bunifuGradientPanel2.Controls.Add(this.bunifuCustomTextbox7);
             this.bunifuGradientPanel2.Controls.Add(this.bunifuCustomTextbox6);
-            this.bunifuGradientPanel2.Controls.Add(this.bunifuCustomTextbox5);
-            this.bunifuGradientPanel2.Controls.Add(this.bunifuCustomTextbox4);
-            this.bunifuGradientPanel2.Controls.Add(this.bunifuCustomTextbox3);
             this.bunifuGradientPanel2.Controls.Add(this.bunifuCustomTextbox2);
             this.bunifuGradientPanel2.Controls.Add(this.txtBuscar);
             this.bunifuGradientPanel2.Controls.Add(this.bunifuCustomTextbox1);
@@ -132,17 +128,13 @@ namespace Login
             this.bunifuGradientPanel2.Controls.Add(this.label15);
             this.bunifuGradientPanel2.Controls.Add(this.label14);
             this.bunifuGradientPanel2.Controls.Add(this.label13);
-            this.bunifuGradientPanel2.Controls.Add(this.label12);
             this.bunifuGradientPanel2.Controls.Add(this.label11);
             this.bunifuGradientPanel2.Controls.Add(this.button1);
-            this.bunifuGradientPanel2.Controls.Add(this.button2);
             this.bunifuGradientPanel2.Controls.Add(this.button3);
             this.bunifuGradientPanel2.Controls.Add(this.button4);
             this.bunifuGradientPanel2.Controls.Add(this.button5);
             this.bunifuGradientPanel2.Controls.Add(this.label7);
             this.bunifuGradientPanel2.Controls.Add(this.label8);
-            this.bunifuGradientPanel2.Controls.Add(this.label9);
-            this.bunifuGradientPanel2.Controls.Add(this.label10);
             this.bunifuGradientPanel2.Controls.Add(this.label6);
             this.bunifuGradientPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.bunifuGradientPanel2.GradientBottomLeft = System.Drawing.Color.Gray;
@@ -155,10 +147,23 @@ namespace Login
             this.bunifuGradientPanel2.Size = new System.Drawing.Size(1300, 650);
             this.bunifuGradientPanel2.TabIndex = 28;
             // 
+            // btnBuscar
+            // 
+            this.btnBuscar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuscar.Location = new System.Drawing.Point(410, 26);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Size = new System.Drawing.Size(119, 35);
+            this.btnBuscar.TabIndex = 85;
+            this.btnBuscar.Text = "Buscar";
+            this.btnBuscar.UseVisualStyleBackColor = true;
+            // 
             // bunifuCustomTextbox9
             // 
             this.bunifuCustomTextbox9.BorderColor = System.Drawing.Color.Black;
-            this.bunifuCustomTextbox9.Location = new System.Drawing.Point(1020, 428);
+            this.bunifuCustomTextbox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomTextbox9.Location = new System.Drawing.Point(1020, 100);
             this.bunifuCustomTextbox9.Multiline = true;
             this.bunifuCustomTextbox9.Name = "bunifuCustomTextbox9";
             this.bunifuCustomTextbox9.Size = new System.Drawing.Size(192, 22);
@@ -167,7 +172,8 @@ namespace Login
             // bunifuCustomTextbox8
             // 
             this.bunifuCustomTextbox8.BorderColor = System.Drawing.Color.Black;
-            this.bunifuCustomTextbox8.Location = new System.Drawing.Point(1020, 383);
+            this.bunifuCustomTextbox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomTextbox8.Location = new System.Drawing.Point(1020, 403);
             this.bunifuCustomTextbox8.Multiline = true;
             this.bunifuCustomTextbox8.Name = "bunifuCustomTextbox8";
             this.bunifuCustomTextbox8.Size = new System.Drawing.Size(192, 22);
@@ -176,7 +182,8 @@ namespace Login
             // bunifuCustomTextbox7
             // 
             this.bunifuCustomTextbox7.BorderColor = System.Drawing.Color.Black;
-            this.bunifuCustomTextbox7.Location = new System.Drawing.Point(1020, 331);
+            this.bunifuCustomTextbox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomTextbox7.Location = new System.Drawing.Point(1020, 297);
             this.bunifuCustomTextbox7.Multiline = true;
             this.bunifuCustomTextbox7.Name = "bunifuCustomTextbox7";
             this.bunifuCustomTextbox7.Size = new System.Drawing.Size(192, 22);
@@ -185,46 +192,21 @@ namespace Login
             // bunifuCustomTextbox6
             // 
             this.bunifuCustomTextbox6.BorderColor = System.Drawing.Color.Black;
-            this.bunifuCustomTextbox6.Location = new System.Drawing.Point(1020, 288);
+            this.bunifuCustomTextbox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomTextbox6.Location = new System.Drawing.Point(1020, 245);
             this.bunifuCustomTextbox6.Multiline = true;
             this.bunifuCustomTextbox6.Name = "bunifuCustomTextbox6";
             this.bunifuCustomTextbox6.Size = new System.Drawing.Size(192, 22);
             this.bunifuCustomTextbox6.TabIndex = 81;
             // 
-            // bunifuCustomTextbox5
-            // 
-            this.bunifuCustomTextbox5.BorderColor = System.Drawing.Color.Black;
-            this.bunifuCustomTextbox5.Location = new System.Drawing.Point(1020, 251);
-            this.bunifuCustomTextbox5.Multiline = true;
-            this.bunifuCustomTextbox5.Name = "bunifuCustomTextbox5";
-            this.bunifuCustomTextbox5.Size = new System.Drawing.Size(192, 22);
-            this.bunifuCustomTextbox5.TabIndex = 80;
-            // 
-            // bunifuCustomTextbox4
-            // 
-            this.bunifuCustomTextbox4.BorderColor = System.Drawing.Color.Black;
-            this.bunifuCustomTextbox4.Location = new System.Drawing.Point(1020, 201);
-            this.bunifuCustomTextbox4.Multiline = true;
-            this.bunifuCustomTextbox4.Name = "bunifuCustomTextbox4";
-            this.bunifuCustomTextbox4.Size = new System.Drawing.Size(192, 22);
-            this.bunifuCustomTextbox4.TabIndex = 79;
-            // 
-            // bunifuCustomTextbox3
-            // 
-            this.bunifuCustomTextbox3.BorderColor = System.Drawing.Color.Black;
-            this.bunifuCustomTextbox3.Location = new System.Drawing.Point(1020, 148);
-            this.bunifuCustomTextbox3.Multiline = true;
-            this.bunifuCustomTextbox3.Name = "bunifuCustomTextbox3";
-            this.bunifuCustomTextbox3.Size = new System.Drawing.Size(192, 22);
-            this.bunifuCustomTextbox3.TabIndex = 78;
-            // 
             // bunifuCustomTextbox2
             // 
             this.bunifuCustomTextbox2.BorderColor = System.Drawing.Color.Black;
-            this.bunifuCustomTextbox2.Location = new System.Drawing.Point(1020, 101);
+            this.bunifuCustomTextbox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomTextbox2.Location = new System.Drawing.Point(1020, 148);
             this.bunifuCustomTextbox2.Multiline = true;
             this.bunifuCustomTextbox2.Name = "bunifuCustomTextbox2";
-            this.bunifuCustomTextbox2.Size = new System.Drawing.Size(192, 22);
+            this.bunifuCustomTextbox2.Size = new System.Drawing.Size(192, 62);
             this.bunifuCustomTextbox2.TabIndex = 77;
             // 
             // txtBuscar
@@ -244,6 +226,7 @@ namespace Login
             // bunifuCustomTextbox1
             // 
             this.bunifuCustomTextbox1.BorderColor = System.Drawing.Color.Black;
+            this.bunifuCustomTextbox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomTextbox1.Location = new System.Drawing.Point(1020, 50);
             this.bunifuCustomTextbox1.Multiline = true;
             this.bunifuCustomTextbox1.Name = "bunifuCustomTextbox1";
@@ -292,10 +275,10 @@ namespace Login
             // 
             this.label14.AutoSize = true;
             this.label14.BackColor = System.Drawing.Color.Transparent;
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(842, 428);
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(849, 102);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(60, 20);
+            this.label14.Size = new System.Drawing.Size(66, 20);
             this.label14.TabIndex = 34;
             this.label14.Text = "Estado";
             // 
@@ -303,32 +286,21 @@ namespace Login
             // 
             this.label13.AutoSize = true;
             this.label13.BackColor = System.Drawing.Color.Transparent;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(842, 333);
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(849, 353);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(118, 20);
+            this.label13.Size = new System.Drawing.Size(133, 20);
             this.label13.TabIndex = 32;
             this.label13.Text = "Precio de venta";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.BackColor = System.Drawing.Color.Transparent;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(842, 203);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(61, 20);
-            this.label12.TabIndex = 30;
-            this.label12.Text = "Modelo";
             // 
             // label11
             // 
             this.label11.AutoSize = true;
             this.label11.BackColor = System.Drawing.Color.Transparent;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.Location = new System.Drawing.Point(842, 52);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(151, 20);
+            this.label11.Size = new System.Drawing.Size(170, 20);
             this.label11.TabIndex = 28;
             this.label11.Text = "Codigo del producto";
             // 
@@ -336,32 +308,20 @@ namespace Login
             // 
             this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(610, 509);
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(486, 509);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(119, 35);
             this.button1.TabIndex = 27;
             this.button1.Text = "Inicio";
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // button2
-            // 
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(314, 508);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(119, 35);
-            this.button2.TabIndex = 26;
-            this.button2.Text = "Modificar";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
             // button3
             // 
             this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(456, 508);
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Location = new System.Drawing.Point(335, 509);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(119, 35);
             this.button3.TabIndex = 25;
@@ -372,7 +332,7 @@ namespace Login
             // 
             this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.Location = new System.Drawing.Point(178, 507);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(119, 37);
@@ -384,7 +344,7 @@ namespace Login
             // 
             this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.Location = new System.Drawing.Point(41, 507);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(119, 35);
@@ -396,10 +356,10 @@ namespace Login
             // 
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(842, 381);
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(855, 401);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(54, 20);
+            this.label7.Size = new System.Drawing.Size(60, 20);
             this.label7.TabIndex = 17;
             this.label7.Text = "Stock:";
             // 
@@ -407,45 +367,23 @@ namespace Login
             // 
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(842, 290);
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(849, 295);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(132, 20);
+            this.label8.Size = new System.Drawing.Size(148, 20);
             this.label8.TabIndex = 16;
             this.label8.Text = "Precio de compra";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.BackColor = System.Drawing.Color.Transparent;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(842, 150);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(57, 20);
-            this.label9.TabIndex = 15;
-            this.label9.Text = "Marca:";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.BackColor = System.Drawing.Color.Transparent;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(842, 249);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(78, 20);
-            this.label10.TabIndex = 14;
-            this.label10.Text = "Categoria";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(842, 101);
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(849, 168);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(69, 20);
+            this.label6.Size = new System.Drawing.Size(86, 20);
             this.label6.TabIndex = 13;
-            this.label6.Text = "Nombre:";
+            this.label6.Text = "Producto:";
             // 
             // btnInicio
             // 
@@ -611,6 +549,27 @@ namespace Login
             this.dataGridView1.Size = new System.Drawing.Size(831, 316);
             this.dataGridView1.TabIndex = 0;
             // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.Transparent;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(849, 247);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(86, 20);
+            this.label9.TabIndex = 86;
+            this.label9.Text = "Cantidad:";
+            // 
+            // bunifuCustomTextbox3
+            // 
+            this.bunifuCustomTextbox3.BorderColor = System.Drawing.Color.Black;
+            this.bunifuCustomTextbox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomTextbox3.Location = new System.Drawing.Point(1020, 353);
+            this.bunifuCustomTextbox3.Multiline = true;
+            this.bunifuCustomTextbox3.Name = "bunifuCustomTextbox3";
+            this.bunifuCustomTextbox3.Size = new System.Drawing.Size(192, 22);
+            this.bunifuCustomTextbox3.TabIndex = 87;
+            // 
             // Inventario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -652,18 +611,14 @@ namespace Login
         private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel2;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label15;
         private Bunifu.Framework.UI.BunifuTextbox txtBuscar;
         private WindowsFormsControlLibrary1.BunifuCustomTextbox bunifuCustomTextbox1;
@@ -672,9 +627,9 @@ namespace Login
         private WindowsFormsControlLibrary1.BunifuCustomTextbox bunifuCustomTextbox8;
         private WindowsFormsControlLibrary1.BunifuCustomTextbox bunifuCustomTextbox7;
         private WindowsFormsControlLibrary1.BunifuCustomTextbox bunifuCustomTextbox6;
-        private WindowsFormsControlLibrary1.BunifuCustomTextbox bunifuCustomTextbox5;
-        private WindowsFormsControlLibrary1.BunifuCustomTextbox bunifuCustomTextbox4;
-        private WindowsFormsControlLibrary1.BunifuCustomTextbox bunifuCustomTextbox3;
         private WindowsFormsControlLibrary1.BunifuCustomTextbox bunifuCustomTextbox2;
+        private System.Windows.Forms.Button btnBuscar;
+        private WindowsFormsControlLibrary1.BunifuCustomTextbox bunifuCustomTextbox3;
+        private System.Windows.Forms.Label label9;
     }
 }
