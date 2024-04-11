@@ -94,7 +94,7 @@ namespace Login
             // bunifuCustomTextbox5
             // 
             this.bunifuCustomTextbox5.BorderColor = System.Drawing.Color.SeaGreen;
-            this.bunifuCustomTextbox5.Location = new System.Drawing.Point(190, 266);
+            this.bunifuCustomTextbox5.Location = new System.Drawing.Point(191, 237);
             this.bunifuCustomTextbox5.Name = "bunifuCustomTextbox5";
             this.bunifuCustomTextbox5.Size = new System.Drawing.Size(192, 26);
             this.bunifuCustomTextbox5.TabIndex = 10;
@@ -102,7 +102,7 @@ namespace Login
             // bunifuCustomTextbox4
             // 
             this.bunifuCustomTextbox4.BorderColor = System.Drawing.Color.SeaGreen;
-            this.bunifuCustomTextbox4.Location = new System.Drawing.Point(190, 227);
+            this.bunifuCustomTextbox4.Location = new System.Drawing.Point(191, 198);
             this.bunifuCustomTextbox4.Name = "bunifuCustomTextbox4";
             this.bunifuCustomTextbox4.Size = new System.Drawing.Size(192, 26);
             this.bunifuCustomTextbox4.TabIndex = 9;
@@ -110,7 +110,7 @@ namespace Login
             // bunifuCustomTextbox3
             // 
             this.bunifuCustomTextbox3.BorderColor = System.Drawing.Color.SeaGreen;
-            this.bunifuCustomTextbox3.Location = new System.Drawing.Point(190, 181);
+            this.bunifuCustomTextbox3.Location = new System.Drawing.Point(191, 152);
             this.bunifuCustomTextbox3.Name = "bunifuCustomTextbox3";
             this.bunifuCustomTextbox3.Size = new System.Drawing.Size(192, 26);
             this.bunifuCustomTextbox3.TabIndex = 8;
@@ -118,7 +118,7 @@ namespace Login
             // bunifuCustomTextbox2
             // 
             this.bunifuCustomTextbox2.BorderColor = System.Drawing.Color.SeaGreen;
-            this.bunifuCustomTextbox2.Location = new System.Drawing.Point(190, 135);
+            this.bunifuCustomTextbox2.Location = new System.Drawing.Point(191, 106);
             this.bunifuCustomTextbox2.Name = "bunifuCustomTextbox2";
             this.bunifuCustomTextbox2.Size = new System.Drawing.Size(192, 26);
             this.bunifuCustomTextbox2.TabIndex = 7;
@@ -126,7 +126,7 @@ namespace Login
             // bunifuCustomLabel5
             // 
             this.bunifuCustomLabel5.AutoSize = true;
-            this.bunifuCustomLabel5.Location = new System.Drawing.Point(59, 266);
+            this.bunifuCustomLabel5.Location = new System.Drawing.Point(60, 237);
             this.bunifuCustomLabel5.Name = "bunifuCustomLabel5";
             this.bunifuCustomLabel5.Size = new System.Drawing.Size(84, 20);
             this.bunifuCustomLabel5.TabIndex = 6;
@@ -135,7 +135,7 @@ namespace Login
             // bunifuCustomLabel4
             // 
             this.bunifuCustomLabel4.AutoSize = true;
-            this.bunifuCustomLabel4.Location = new System.Drawing.Point(56, 227);
+            this.bunifuCustomLabel4.Location = new System.Drawing.Point(57, 198);
             this.bunifuCustomLabel4.Name = "bunifuCustomLabel4";
             this.bunifuCustomLabel4.Size = new System.Drawing.Size(79, 20);
             this.bunifuCustomLabel4.TabIndex = 5;
@@ -144,7 +144,7 @@ namespace Login
             // bunifuCustomLabel3
             // 
             this.bunifuCustomLabel3.AutoSize = true;
-            this.bunifuCustomLabel3.Location = new System.Drawing.Point(56, 181);
+            this.bunifuCustomLabel3.Location = new System.Drawing.Point(57, 152);
             this.bunifuCustomLabel3.Name = "bunifuCustomLabel3";
             this.bunifuCustomLabel3.Size = new System.Drawing.Size(65, 20);
             this.bunifuCustomLabel3.TabIndex = 4;
@@ -153,7 +153,7 @@ namespace Login
             // bunifuCustomLabel2
             // 
             this.bunifuCustomLabel2.AutoSize = true;
-            this.bunifuCustomLabel2.Location = new System.Drawing.Point(56, 138);
+            this.bunifuCustomLabel2.Location = new System.Drawing.Point(57, 109);
             this.bunifuCustomLabel2.Name = "bunifuCustomLabel2";
             this.bunifuCustomLabel2.Size = new System.Drawing.Size(73, 20);
             this.bunifuCustomLabel2.TabIndex = 3;
@@ -162,7 +162,7 @@ namespace Login
             // bunifuCustomLabel1
             // 
             this.bunifuCustomLabel1.AutoSize = true;
-            this.bunifuCustomLabel1.Location = new System.Drawing.Point(56, 88);
+            this.bunifuCustomLabel1.Location = new System.Drawing.Point(57, 59);
             this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
             this.bunifuCustomLabel1.Size = new System.Drawing.Size(76, 20);
             this.bunifuCustomLabel1.TabIndex = 2;
@@ -171,7 +171,7 @@ namespace Login
             // bunifuCustomTextbox1
             // 
             this.bunifuCustomTextbox1.BorderColor = System.Drawing.Color.SeaGreen;
-            this.bunifuCustomTextbox1.Location = new System.Drawing.Point(190, 88);
+            this.bunifuCustomTextbox1.Location = new System.Drawing.Point(191, 59);
             this.bunifuCustomTextbox1.Name = "bunifuCustomTextbox1";
             this.bunifuCustomTextbox1.Size = new System.Drawing.Size(192, 26);
             this.bunifuCustomTextbox1.TabIndex = 1;
