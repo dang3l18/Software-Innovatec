@@ -31,8 +31,6 @@ namespace Login
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Registro_de_Cliente));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.bunifuCustomLabel6 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.bunifuCustomTextbox6 = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.bunifuCustomTextbox5 = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
@@ -54,8 +52,6 @@ namespace Login
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Silver;
-            this.groupBox1.Controls.Add(this.bunifuCustomLabel6);
-            this.groupBox1.Controls.Add(this.bunifuCustomTextbox6);
             this.groupBox1.Controls.Add(this.button3);
             this.groupBox1.Controls.Add(this.button2);
             this.groupBox1.Controls.Add(this.bunifuCustomTextbox5);
@@ -76,23 +72,6 @@ namespace Login
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Cliente";
-            // 
-            // bunifuCustomLabel6
-            // 
-            this.bunifuCustomLabel6.AutoSize = true;
-            this.bunifuCustomLabel6.Location = new System.Drawing.Point(59, 51);
-            this.bunifuCustomLabel6.Name = "bunifuCustomLabel6";
-            this.bunifuCustomLabel6.Size = new System.Drawing.Size(89, 20);
-            this.bunifuCustomLabel6.TabIndex = 14;
-            this.bunifuCustomLabel6.Text = "ID Cliente";
-            // 
-            // bunifuCustomTextbox6
-            // 
-            this.bunifuCustomTextbox6.BorderColor = System.Drawing.Color.SeaGreen;
-            this.bunifuCustomTextbox6.Location = new System.Drawing.Point(190, 51);
-            this.bunifuCustomTextbox6.Name = "bunifuCustomTextbox6";
-            this.bunifuCustomTextbox6.Size = new System.Drawing.Size(192, 26);
-            this.bunifuCustomTextbox6.TabIndex = 13;
             // 
             // button3
             // 
@@ -256,7 +235,5 @@ namespace Login
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel3;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel2;
         private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel1;
-        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel6;
-        private WindowsFormsControlLibrary1.BunifuCustomTextbox bunifuCustomTextbox6;
     }
 }

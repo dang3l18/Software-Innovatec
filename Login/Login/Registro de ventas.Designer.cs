@@ -38,6 +38,12 @@ namespace Login
             this.bunifuTextbox1 = new Bunifu.Framework.UI.BunifuTextbox();
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.Codigo_de_Barras = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Descripcion_del_Producto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Precio_Venta = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Importe = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Existencia = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bunifuGradientPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid1)).BeginInit();
@@ -79,19 +85,26 @@ namespace Login
             this.bunifuCustomDataGrid1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.bunifuCustomDataGrid1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.SeaGreen;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.SeaGreen;
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.bunifuCustomDataGrid1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.bunifuCustomDataGrid1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.bunifuCustomDataGrid1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Codigo_de_Barras,
+            this.Descripcion_del_Producto,
+            this.Precio_Venta,
+            this.Cantidad,
+            this.Importe,
+            this.Existencia});
             this.bunifuCustomDataGrid1.Dock = System.Windows.Forms.DockStyle.Top;
             this.bunifuCustomDataGrid1.DoubleBuffered = true;
             this.bunifuCustomDataGrid1.EnableHeadersVisualStyles = false;
-            this.bunifuCustomDataGrid1.HeaderBgColor = System.Drawing.Color.SeaGreen;
-            this.bunifuCustomDataGrid1.HeaderForeColor = System.Drawing.Color.SeaGreen;
+            this.bunifuCustomDataGrid1.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.bunifuCustomDataGrid1.HeaderForeColor = System.Drawing.Color.Black;
             this.bunifuCustomDataGrid1.Location = new System.Drawing.Point(0, 59);
             this.bunifuCustomDataGrid1.Name = "bunifuCustomDataGrid1";
             this.bunifuCustomDataGrid1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -126,10 +139,48 @@ namespace Login
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(591, 11);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(146, 36);
+            this.button1.Size = new System.Drawing.Size(146, 42);
             this.button1.TabIndex = 2;
             this.button1.Text = "Buscar Producto";
             this.button1.UseVisualStyleBackColor = true;
+            // 
+            // Codigo_de_Barras
+            // 
+            this.Codigo_de_Barras.HeaderText = "Codigo de Barras";
+            this.Codigo_de_Barras.MinimumWidth = 2;
+            this.Codigo_de_Barras.Name = "Codigo_de_Barras";
+            this.Codigo_de_Barras.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.Codigo_de_Barras.Width = 150;
+            // 
+            // Descripcion_del_Producto
+            // 
+            this.Descripcion_del_Producto.HeaderText = "Descripcion del Producto";
+            this.Descripcion_del_Producto.Name = "Descripcion_del_Producto";
+            this.Descripcion_del_Producto.Width = 200;
+            // 
+            // Precio_Venta
+            // 
+            this.Precio_Venta.HeaderText = "Precio Venta";
+            this.Precio_Venta.Name = "Precio_Venta";
+            this.Precio_Venta.Width = 150;
+            // 
+            // Cantidad
+            // 
+            this.Cantidad.HeaderText = "Cant.";
+            this.Cantidad.Name = "Cantidad";
+            this.Cantidad.Width = 150;
+            // 
+            // Importe
+            // 
+            this.Importe.HeaderText = "Importe";
+            this.Importe.Name = "Importe";
+            this.Importe.Width = 150;
+            // 
+            // Existencia
+            // 
+            this.Existencia.HeaderText = "Existencia";
+            this.Existencia.Name = "Existencia";
+            this.Existencia.Width = 150;
             // 
             // Transacciones
             // 
@@ -157,5 +208,11 @@ namespace Login
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
         private Bunifu.Framework.UI.BunifuTextbox bunifuTextbox1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Codigo_de_Barras;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Descripcion_del_Producto;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Precio_Venta;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Cantidad;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Importe;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Existencia;
     }
 }
