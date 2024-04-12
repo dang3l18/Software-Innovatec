@@ -37,16 +37,18 @@ namespace Login
             this.btnModificar = new System.Windows.Forms.Button();
             this.btnImprimir = new System.Windows.Forms.Button();
             this.bunifuCustomDataGrid1 = new Bunifu.Framework.UI.BunifuCustomDataGrid();
-            this.Codigo_de_Barras = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Descripcion_del_Producto = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Precio_Venta = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Importe = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Existencia = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.bunifuTextbox1 = new Bunifu.Framework.UI.BunifuTextbox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.alphaBlendTextBox1 = new ZBobb.AlphaBlendTextBox();
+            this.Existencia = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Importe = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Precio_Venta = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Descripcion_del_Producto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Codigo_de_Barras = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bunifuGradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid1)).BeginInit();
             this.panel1.SuspendLayout();
@@ -56,6 +58,8 @@ namespace Login
             // 
             this.bunifuGradientPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel1.BackgroundImage")));
             this.bunifuGradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuGradientPanel1.Controls.Add(this.alphaBlendTextBox1);
+            this.bunifuGradientPanel1.Controls.Add(this.label2);
             this.bunifuGradientPanel1.Controls.Add(this.btnEliminar);
             this.bunifuGradientPanel1.Controls.Add(this.btnModificar);
             this.bunifuGradientPanel1.Controls.Add(this.btnImprimir);
@@ -135,44 +139,6 @@ namespace Login
             this.bunifuCustomDataGrid1.Size = new System.Drawing.Size(1014, 399);
             this.bunifuCustomDataGrid1.TabIndex = 1;
             // 
-            // Codigo_de_Barras
-            // 
-            this.Codigo_de_Barras.HeaderText = "Codigo de Barras";
-            this.Codigo_de_Barras.MinimumWidth = 2;
-            this.Codigo_de_Barras.Name = "Codigo_de_Barras";
-            this.Codigo_de_Barras.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.Codigo_de_Barras.Width = 150;
-            // 
-            // Descripcion_del_Producto
-            // 
-            this.Descripcion_del_Producto.HeaderText = "Descripcion del Producto";
-            this.Descripcion_del_Producto.Name = "Descripcion_del_Producto";
-            this.Descripcion_del_Producto.Width = 200;
-            // 
-            // Precio_Venta
-            // 
-            this.Precio_Venta.HeaderText = "Precio Venta";
-            this.Precio_Venta.Name = "Precio_Venta";
-            this.Precio_Venta.Width = 150;
-            // 
-            // Cantidad
-            // 
-            this.Cantidad.HeaderText = "Cant.";
-            this.Cantidad.Name = "Cantidad";
-            this.Cantidad.Width = 150;
-            // 
-            // Importe
-            // 
-            this.Importe.HeaderText = "Importe";
-            this.Importe.Name = "Importe";
-            this.Importe.Width = 150;
-            // 
-            // Existencia
-            // 
-            this.Existencia.HeaderText = "Existencia";
-            this.Existencia.Name = "Existencia";
-            this.Existencia.Width = 150;
-            // 
             // panel1
             // 
             this.panel1.Controls.Add(this.button1);
@@ -217,6 +183,63 @@ namespace Login
             this.bunifuTextbox1.TabIndex = 0;
             this.bunifuTextbox1.text = "";
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(808, 505);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(104, 20);
+            this.label2.TabIndex = 79;
+            this.label2.Text = "Precio Total";
+            // 
+            // alphaBlendTextBox1
+            // 
+            this.alphaBlendTextBox1.BackAlpha = 10;
+            this.alphaBlendTextBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.alphaBlendTextBox1.Location = new System.Drawing.Point(927, 505);
+            this.alphaBlendTextBox1.Name = "alphaBlendTextBox1";
+            this.alphaBlendTextBox1.Size = new System.Drawing.Size(100, 20);
+            this.alphaBlendTextBox1.TabIndex = 80;
+            // 
+            // Existencia
+            // 
+            this.Existencia.HeaderText = "Existencia";
+            this.Existencia.Name = "Existencia";
+            this.Existencia.Width = 150;
+            // 
+            // Importe
+            // 
+            this.Importe.HeaderText = "Importe";
+            this.Importe.Name = "Importe";
+            this.Importe.Width = 150;
+            // 
+            // Cantidad
+            // 
+            this.Cantidad.HeaderText = "Cant.";
+            this.Cantidad.Name = "Cantidad";
+            this.Cantidad.Width = 150;
+            // 
+            // Precio_Venta
+            // 
+            this.Precio_Venta.HeaderText = "Precio Venta";
+            this.Precio_Venta.Name = "Precio_Venta";
+            this.Precio_Venta.Width = 150;
+            // 
+            // Descripcion_del_Producto
+            // 
+            this.Descripcion_del_Producto.HeaderText = "Descripcion del Producto";
+            this.Descripcion_del_Producto.Name = "Descripcion_del_Producto";
+            this.Descripcion_del_Producto.Width = 200;
+            // 
+            // Codigo_de_Barras
+            // 
+            this.Codigo_de_Barras.HeaderText = "Codigo de Barras";
+            this.Codigo_de_Barras.MinimumWidth = 2;
+            this.Codigo_de_Barras.Name = "Codigo_de_Barras";
+            this.Codigo_de_Barras.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.Codigo_de_Barras.Width = 150;
+            // 
             // Transacciones
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -228,6 +251,7 @@ namespace Login
             this.Name = "Transacciones";
             this.Text = "Transacciones";
             this.bunifuGradientPanel1.ResumeLayout(false);
+            this.bunifuGradientPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -243,14 +267,16 @@ namespace Login
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
         private Bunifu.Framework.UI.BunifuTextbox bunifuTextbox1;
+        private System.Windows.Forms.Button btnEliminar;
+        private System.Windows.Forms.Button btnModificar;
+        private System.Windows.Forms.Button btnImprimir;
+        private ZBobb.AlphaBlendTextBox alphaBlendTextBox1;
+        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Codigo_de_Barras;
         private System.Windows.Forms.DataGridViewTextBoxColumn Descripcion_del_Producto;
         private System.Windows.Forms.DataGridViewTextBoxColumn Precio_Venta;
         private System.Windows.Forms.DataGridViewTextBoxColumn Cantidad;
         private System.Windows.Forms.DataGridViewTextBoxColumn Importe;
         private System.Windows.Forms.DataGridViewTextBoxColumn Existencia;
-        private System.Windows.Forms.Button btnEliminar;
-        private System.Windows.Forms.Button btnModificar;
-        private System.Windows.Forms.Button btnImprimir;
     }
 }

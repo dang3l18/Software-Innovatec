@@ -75,12 +75,6 @@
     </Compile>
     <Compile Include="CONEXION.cs" />
     <Compile Include="DatosGet.cs" />
-    <Compile Include="Facturacion.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Facturacion.Designer.cs">
-      <DependentUpon>Facturacion.cs</DependentUpon>
-    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -122,9 +116,6 @@
       <DependentUpon>Registro de ventas.cs</DependentUpon>
     </Compile>
     <Compile Include="Usuario.cs" />
-    <EmbeddedResource Include="Facturacion.resx">
-      <DependentUpon>Facturacion.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
