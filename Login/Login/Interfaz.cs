@@ -105,7 +105,7 @@ namespace Login
 
         private void bunifuFlatButton1_Click(object sender, EventArgs e)
         {
-            Form principal = new Inventario();
+            Form principal = new Registro_de_productos();
             principal.Show();
             principal.Visible = true;
             Visible = false;

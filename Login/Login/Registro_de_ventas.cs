@@ -10,23 +10,11 @@ using System.Windows.Forms;
 
 namespace Login
 {
-    public partial class Transacciones : Form
+    public partial class Registro_de_ventas : Form
     {
-        public Transacciones()
+        public Registro_de_ventas()
         {
             InitializeComponent();
         }
-
-        private void label6_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-       
     }
 }
