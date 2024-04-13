@@ -29,6 +29,7 @@ namespace Login
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Reparaciones));
             this.textBox14 = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
@@ -39,18 +40,18 @@ namespace Login
             this.label6 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.textBox4 = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
             this.bunifuDatepicker1 = new Bunifu.Framework.UI.BunifuDatepicker();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.btnModificar = new System.Windows.Forms.Button();
             this.btnEstado = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.SuspendLayout();
             // 
             // textBox14
             // 
-            this.textBox14.Location = new System.Drawing.Point(261, 339);
+            this.textBox14.Location = new System.Drawing.Point(257, 359);
             this.textBox14.Multiline = true;
             this.textBox14.Name = "textBox14";
             this.textBox14.Size = new System.Drawing.Size(270, 31);
@@ -61,7 +62,7 @@ namespace Login
             this.label14.AutoSize = true;
             this.label14.BackColor = System.Drawing.Color.Transparent;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(21, 405);
+            this.label14.Location = new System.Drawing.Point(17, 425);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(229, 20);
             this.label14.TabIndex = 51;
@@ -72,7 +73,7 @@ namespace Login
             this.label13.AutoSize = true;
             this.label13.BackColor = System.Drawing.Color.Transparent;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(21, 220);
+            this.label13.Location = new System.Drawing.Point(17, 240);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(216, 20);
             this.label13.TabIndex = 49;
@@ -80,7 +81,7 @@ namespace Login
             // 
             // textBox8
             // 
-            this.textBox8.Location = new System.Drawing.Point(261, 98);
+            this.textBox8.Location = new System.Drawing.Point(257, 118);
             this.textBox8.Multiline = true;
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(270, 31);
@@ -88,7 +89,7 @@ namespace Login
             // 
             // textBox9
             // 
-            this.textBox9.Location = new System.Drawing.Point(261, 55);
+            this.textBox9.Location = new System.Drawing.Point(257, 75);
             this.textBox9.Multiline = true;
             this.textBox9.Name = "textBox9";
             this.textBox9.Size = new System.Drawing.Size(270, 31);
@@ -99,7 +100,7 @@ namespace Login
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(21, 109);
+            this.label8.Location = new System.Drawing.Point(17, 129);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(96, 20);
             this.label8.TabIndex = 39;
@@ -110,7 +111,7 @@ namespace Login
             this.label9.AutoSize = true;
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(21, 66);
+            this.label9.Location = new System.Drawing.Point(17, 86);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(65, 20);
             this.label9.TabIndex = 38;
@@ -121,7 +122,7 @@ namespace Login
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(21, 166);
+            this.label6.Location = new System.Drawing.Point(17, 186);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(167, 20);
             this.label6.TabIndex = 36;
@@ -132,7 +133,7 @@ namespace Login
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(21, 350);
+            this.label4.Location = new System.Drawing.Point(17, 370);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(66, 20);
             this.label4.TabIndex = 60;
@@ -140,23 +141,11 @@ namespace Login
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(261, 222);
+            this.textBox4.Location = new System.Drawing.Point(257, 242);
             this.textBox4.Multiline = true;
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(270, 81);
             this.textBox4.TabIndex = 61;
-            // 
-            // label5
-            // 
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(0, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(577, 23);
-            this.label5.TabIndex = 69;
-            this.label5.Text = "Gestión del Servicio de Reparaciones";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // bunifuDatepicker1
             // 
@@ -165,7 +154,7 @@ namespace Login
             this.bunifuDatepicker1.ForeColor = System.Drawing.Color.Black;
             this.bunifuDatepicker1.Format = System.Windows.Forms.DateTimePickerFormat.Long;
             this.bunifuDatepicker1.FormatCustom = null;
-            this.bunifuDatepicker1.Location = new System.Drawing.Point(261, 156);
+            this.bunifuDatepicker1.Location = new System.Drawing.Point(257, 176);
             this.bunifuDatepicker1.Name = "bunifuDatepicker1";
             this.bunifuDatepicker1.Size = new System.Drawing.Size(270, 30);
             this.bunifuDatepicker1.TabIndex = 70;
@@ -174,7 +163,7 @@ namespace Login
             // btnGuardar
             // 
             this.btnGuardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGuardar.Location = new System.Drawing.Point(27, 470);
+            this.btnGuardar.Location = new System.Drawing.Point(23, 490);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(122, 36);
             this.btnGuardar.TabIndex = 71;
@@ -184,7 +173,7 @@ namespace Login
             // btnModificar
             // 
             this.btnModificar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnModificar.Location = new System.Drawing.Point(155, 470);
+            this.btnModificar.Location = new System.Drawing.Point(151, 490);
             this.btnModificar.Name = "btnModificar";
             this.btnModificar.Size = new System.Drawing.Size(122, 36);
             this.btnModificar.TabIndex = 72;
@@ -194,7 +183,7 @@ namespace Login
             // btnEstado
             // 
             this.btnEstado.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEstado.Location = new System.Drawing.Point(283, 470);
+            this.btnEstado.Location = new System.Drawing.Point(279, 490);
             this.btnEstado.Name = "btnEstado";
             this.btnEstado.Size = new System.Drawing.Size(122, 36);
             this.btnEstado.TabIndex = 73;
@@ -204,7 +193,7 @@ namespace Login
             // btnEliminar
             // 
             this.btnEliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEliminar.Location = new System.Drawing.Point(411, 470);
+            this.btnEliminar.Location = new System.Drawing.Point(407, 490);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(122, 36);
             this.btnEliminar.TabIndex = 74;
@@ -213,11 +202,26 @@ namespace Login
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(261, 407);
+            this.textBox1.Location = new System.Drawing.Point(257, 427);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(270, 31);
             this.textBox1.TabIndex = 75;
+            // 
+            // bunifuGradientPanel1
+            // 
+            this.bunifuGradientPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel1.BackgroundImage")));
+            this.bunifuGradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuGradientPanel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.bunifuGradientPanel1.GradientBottomLeft = System.Drawing.Color.Black;
+            this.bunifuGradientPanel1.GradientBottomRight = System.Drawing.Color.White;
+            this.bunifuGradientPanel1.GradientTopLeft = System.Drawing.Color.White;
+            this.bunifuGradientPanel1.GradientTopRight = System.Drawing.Color.White;
+            this.bunifuGradientPanel1.Location = new System.Drawing.Point(0, 0);
+            this.bunifuGradientPanel1.Name = "bunifuGradientPanel1";
+            this.bunifuGradientPanel1.Quality = 10;
+            this.bunifuGradientPanel1.Size = new System.Drawing.Size(577, 49);
+            this.bunifuGradientPanel1.TabIndex = 76;
             // 
             // Reparaciones
             // 
@@ -225,13 +229,13 @@ namespace Login
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Silver;
             this.ClientSize = new System.Drawing.Size(577, 548);
+            this.Controls.Add(this.bunifuGradientPanel1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.btnEstado);
             this.Controls.Add(this.btnModificar);
             this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.bunifuDatepicker1);
-            this.Controls.Add(this.label5);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.textBox14);
@@ -262,12 +266,12 @@ namespace Login
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.Label label5;
         private Bunifu.Framework.UI.BunifuDatepicker bunifuDatepicker1;
         private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.Button btnModificar;
         private System.Windows.Forms.Button btnEstado;
         private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.TextBox textBox1;
+        private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel1;
     }
 }
