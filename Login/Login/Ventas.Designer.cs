@@ -33,6 +33,9 @@ namespace Login
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
+            this.btnEliminar = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.bunifuThinButton21 = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.btnCobrar = new Bunifu.Framework.UI.BunifuThinButton2();
             this.alphaBlendTextBox4 = new ZBobb.AlphaBlendTextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.alphaBlendTextBox3 = new ZBobb.AlphaBlendTextBox();
@@ -52,9 +55,6 @@ namespace Login
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.bunifuTextbox1 = new Bunifu.Framework.UI.BunifuTextbox();
-            this.btnCobrar = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.bunifuThinButton21 = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.btnEliminar = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuGradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid1)).BeginInit();
             this.panel1.SuspendLayout();
@@ -87,6 +87,81 @@ namespace Login
             this.bunifuGradientPanel1.Quality = 10;
             this.bunifuGradientPanel1.Size = new System.Drawing.Size(1333, 635);
             this.bunifuGradientPanel1.TabIndex = 86;
+            // 
+            // btnEliminar
+            // 
+            this.btnEliminar.ActiveBorderThickness = 1;
+            this.btnEliminar.ActiveCornerRadius = 20;
+            this.btnEliminar.ActiveFillColor = System.Drawing.Color.Transparent;
+            this.btnEliminar.ActiveForecolor = System.Drawing.Color.Transparent;
+            this.btnEliminar.ActiveLineColor = System.Drawing.Color.Transparent;
+            this.btnEliminar.BackColor = System.Drawing.Color.Silver;
+            this.btnEliminar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnEliminar.BackgroundImage")));
+            this.btnEliminar.ButtonText = "Eliminar";
+            this.btnEliminar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnEliminar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEliminar.ForeColor = System.Drawing.Color.SeaGreen;
+            this.btnEliminar.IdleBorderThickness = 1;
+            this.btnEliminar.IdleCornerRadius = 20;
+            this.btnEliminar.IdleFillColor = System.Drawing.Color.White;
+            this.btnEliminar.IdleForecolor = System.Drawing.Color.Black;
+            this.btnEliminar.IdleLineColor = System.Drawing.Color.Gray;
+            this.btnEliminar.Location = new System.Drawing.Point(721, 581);
+            this.btnEliminar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Size = new System.Drawing.Size(163, 40);
+            this.btnEliminar.TabIndex = 89;
+            this.btnEliminar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // bunifuThinButton21
+            // 
+            this.bunifuThinButton21.ActiveBorderThickness = 1;
+            this.bunifuThinButton21.ActiveCornerRadius = 20;
+            this.bunifuThinButton21.ActiveFillColor = System.Drawing.Color.Transparent;
+            this.bunifuThinButton21.ActiveForecolor = System.Drawing.Color.Transparent;
+            this.bunifuThinButton21.ActiveLineColor = System.Drawing.Color.Transparent;
+            this.bunifuThinButton21.BackColor = System.Drawing.Color.Silver;
+            this.bunifuThinButton21.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton21.BackgroundImage")));
+            this.bunifuThinButton21.ButtonText = "Modificar";
+            this.bunifuThinButton21.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuThinButton21.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuThinButton21.ForeColor = System.Drawing.Color.SeaGreen;
+            this.bunifuThinButton21.IdleBorderThickness = 1;
+            this.bunifuThinButton21.IdleCornerRadius = 20;
+            this.bunifuThinButton21.IdleFillColor = System.Drawing.Color.White;
+            this.bunifuThinButton21.IdleForecolor = System.Drawing.Color.Black;
+            this.bunifuThinButton21.IdleLineColor = System.Drawing.Color.Gray;
+            this.bunifuThinButton21.Location = new System.Drawing.Point(901, 581);
+            this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.bunifuThinButton21.Name = "bunifuThinButton21";
+            this.bunifuThinButton21.Size = new System.Drawing.Size(163, 40);
+            this.bunifuThinButton21.TabIndex = 88;
+            this.bunifuThinButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // btnCobrar
+            // 
+            this.btnCobrar.ActiveBorderThickness = 1;
+            this.btnCobrar.ActiveCornerRadius = 20;
+            this.btnCobrar.ActiveFillColor = System.Drawing.Color.Transparent;
+            this.btnCobrar.ActiveForecolor = System.Drawing.Color.Transparent;
+            this.btnCobrar.ActiveLineColor = System.Drawing.Color.Transparent;
+            this.btnCobrar.BackColor = System.Drawing.Color.Silver;
+            this.btnCobrar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCobrar.BackgroundImage")));
+            this.btnCobrar.ButtonText = "Cobrar";
+            this.btnCobrar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCobrar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCobrar.ForeColor = System.Drawing.Color.SeaGreen;
+            this.btnCobrar.IdleBorderThickness = 1;
+            this.btnCobrar.IdleCornerRadius = 20;
+            this.btnCobrar.IdleFillColor = System.Drawing.Color.White;
+            this.btnCobrar.IdleForecolor = System.Drawing.Color.Black;
+            this.btnCobrar.IdleLineColor = System.Drawing.Color.Gray;
+            this.btnCobrar.Location = new System.Drawing.Point(550, 581);
+            this.btnCobrar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnCobrar.Name = "btnCobrar";
+            this.btnCobrar.Size = new System.Drawing.Size(163, 40);
+            this.btnCobrar.TabIndex = 87;
+            this.btnCobrar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // alphaBlendTextBox4
             // 
@@ -294,81 +369,6 @@ namespace Login
             this.bunifuTextbox1.Size = new System.Drawing.Size(341, 42);
             this.bunifuTextbox1.TabIndex = 0;
             this.bunifuTextbox1.text = "";
-            // 
-            // btnCobrar
-            // 
-            this.btnCobrar.ActiveBorderThickness = 1;
-            this.btnCobrar.ActiveCornerRadius = 20;
-            this.btnCobrar.ActiveFillColor = System.Drawing.Color.Black;
-            this.btnCobrar.ActiveForecolor = System.Drawing.Color.Black;
-            this.btnCobrar.ActiveLineColor = System.Drawing.Color.Black;
-            this.btnCobrar.BackColor = System.Drawing.Color.Silver;
-            this.btnCobrar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCobrar.BackgroundImage")));
-            this.btnCobrar.ButtonText = "Cobrar";
-            this.btnCobrar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCobrar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCobrar.ForeColor = System.Drawing.Color.SeaGreen;
-            this.btnCobrar.IdleBorderThickness = 1;
-            this.btnCobrar.IdleCornerRadius = 20;
-            this.btnCobrar.IdleFillColor = System.Drawing.Color.White;
-            this.btnCobrar.IdleForecolor = System.Drawing.Color.Black;
-            this.btnCobrar.IdleLineColor = System.Drawing.Color.Gray;
-            this.btnCobrar.Location = new System.Drawing.Point(550, 581);
-            this.btnCobrar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btnCobrar.Name = "btnCobrar";
-            this.btnCobrar.Size = new System.Drawing.Size(163, 40);
-            this.btnCobrar.TabIndex = 87;
-            this.btnCobrar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // bunifuThinButton21
-            // 
-            this.bunifuThinButton21.ActiveBorderThickness = 1;
-            this.bunifuThinButton21.ActiveCornerRadius = 20;
-            this.bunifuThinButton21.ActiveFillColor = System.Drawing.Color.Black;
-            this.bunifuThinButton21.ActiveForecolor = System.Drawing.Color.Black;
-            this.bunifuThinButton21.ActiveLineColor = System.Drawing.Color.Black;
-            this.bunifuThinButton21.BackColor = System.Drawing.Color.Silver;
-            this.bunifuThinButton21.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton21.BackgroundImage")));
-            this.bunifuThinButton21.ButtonText = "Modificar";
-            this.bunifuThinButton21.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuThinButton21.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuThinButton21.ForeColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton21.IdleBorderThickness = 1;
-            this.bunifuThinButton21.IdleCornerRadius = 20;
-            this.bunifuThinButton21.IdleFillColor = System.Drawing.Color.White;
-            this.bunifuThinButton21.IdleForecolor = System.Drawing.Color.Black;
-            this.bunifuThinButton21.IdleLineColor = System.Drawing.Color.Gray;
-            this.bunifuThinButton21.Location = new System.Drawing.Point(901, 581);
-            this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.bunifuThinButton21.Name = "bunifuThinButton21";
-            this.bunifuThinButton21.Size = new System.Drawing.Size(163, 40);
-            this.bunifuThinButton21.TabIndex = 88;
-            this.bunifuThinButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // btnEliminar
-            // 
-            this.btnEliminar.ActiveBorderThickness = 1;
-            this.btnEliminar.ActiveCornerRadius = 20;
-            this.btnEliminar.ActiveFillColor = System.Drawing.Color.Black;
-            this.btnEliminar.ActiveForecolor = System.Drawing.Color.Black;
-            this.btnEliminar.ActiveLineColor = System.Drawing.Color.Black;
-            this.btnEliminar.BackColor = System.Drawing.Color.Silver;
-            this.btnEliminar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnEliminar.BackgroundImage")));
-            this.btnEliminar.ButtonText = "Eliminar";
-            this.btnEliminar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnEliminar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEliminar.ForeColor = System.Drawing.Color.SeaGreen;
-            this.btnEliminar.IdleBorderThickness = 1;
-            this.btnEliminar.IdleCornerRadius = 20;
-            this.btnEliminar.IdleFillColor = System.Drawing.Color.White;
-            this.btnEliminar.IdleForecolor = System.Drawing.Color.Black;
-            this.btnEliminar.IdleLineColor = System.Drawing.Color.Gray;
-            this.btnEliminar.Location = new System.Drawing.Point(721, 581);
-            this.btnEliminar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(163, 40);
-            this.btnEliminar.TabIndex = 89;
-            this.btnEliminar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Transacciones
             // 

@@ -49,9 +49,6 @@ namespace Login
             this.label13 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -71,6 +68,9 @@ namespace Login
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.bunifuThinButton21 = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.btnGuardar1 = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.btnEliminar1 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuGradientPanel1.SuspendLayout();
             this.bunifuGradientPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid1)).BeginInit();
@@ -113,6 +113,9 @@ namespace Login
             // 
             this.bunifuGradientPanel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel2.BackgroundImage")));
             this.bunifuGradientPanel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuGradientPanel2.Controls.Add(this.btnEliminar1);
+            this.bunifuGradientPanel2.Controls.Add(this.btnGuardar1);
+            this.bunifuGradientPanel2.Controls.Add(this.bunifuThinButton21);
             this.bunifuGradientPanel2.Controls.Add(this.bunifuCustomTextbox3);
             this.bunifuGradientPanel2.Controls.Add(this.label9);
             this.bunifuGradientPanel2.Controls.Add(this.btnBuscar);
@@ -128,9 +131,6 @@ namespace Login
             this.bunifuGradientPanel2.Controls.Add(this.label13);
             this.bunifuGradientPanel2.Controls.Add(this.label11);
             this.bunifuGradientPanel2.Controls.Add(this.button1);
-            this.bunifuGradientPanel2.Controls.Add(this.button3);
-            this.bunifuGradientPanel2.Controls.Add(this.button4);
-            this.bunifuGradientPanel2.Controls.Add(this.button5);
             this.bunifuGradientPanel2.Controls.Add(this.label7);
             this.bunifuGradientPanel2.Controls.Add(this.label8);
             this.bunifuGradientPanel2.Controls.Add(this.label6);
@@ -316,48 +316,12 @@ namespace Login
             this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(486, 509);
+            this.button1.Location = new System.Drawing.Point(747, 509);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(119, 35);
             this.button1.TabIndex = 27;
             this.button1.Text = "Inicio";
             this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(335, 509);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(119, 35);
-            this.button3.TabIndex = 25;
-            this.button3.Text = "Eliminar";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // button4
-            // 
-            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(178, 507);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(119, 37);
-            this.button4.TabIndex = 24;
-            this.button4.Text = "Editar";
-            this.button4.UseVisualStyleBackColor = true;
-            // 
-            // button5
-            // 
-            this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(41, 507);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(119, 35);
-            this.button5.TabIndex = 23;
-            this.button5.Text = "Guardar";
-            this.button5.UseVisualStyleBackColor = true;
             // 
             // label7
             // 
@@ -556,6 +520,82 @@ namespace Login
             this.dataGridView1.Size = new System.Drawing.Size(831, 316);
             this.dataGridView1.TabIndex = 0;
             // 
+            // bunifuThinButton21
+            // 
+            this.bunifuThinButton21.ActiveBorderThickness = 1;
+            this.bunifuThinButton21.ActiveCornerRadius = 20;
+            this.bunifuThinButton21.ActiveFillColor = System.Drawing.Color.Transparent;
+            this.bunifuThinButton21.ActiveForecolor = System.Drawing.Color.Transparent;
+            this.bunifuThinButton21.ActiveLineColor = System.Drawing.Color.Transparent;
+            this.bunifuThinButton21.BackColor = System.Drawing.SystemColors.Control;
+            this.bunifuThinButton21.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton21.BackgroundImage")));
+            this.bunifuThinButton21.ButtonText = "Modificar";
+            this.bunifuThinButton21.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuThinButton21.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuThinButton21.ForeColor = System.Drawing.Color.SeaGreen;
+            this.bunifuThinButton21.IdleBorderThickness = 1;
+            this.bunifuThinButton21.IdleCornerRadius = 20;
+            this.bunifuThinButton21.IdleFillColor = System.Drawing.Color.White;
+            this.bunifuThinButton21.IdleForecolor = System.Drawing.Color.Black;
+            this.bunifuThinButton21.IdleLineColor = System.Drawing.Color.Gray;
+            this.bunifuThinButton21.Location = new System.Drawing.Point(231, 509);
+            this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.bunifuThinButton21.Name = "bunifuThinButton21";
+            this.bunifuThinButton21.Size = new System.Drawing.Size(163, 40);
+            this.bunifuThinButton21.TabIndex = 89;
+            this.bunifuThinButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // btnGuardar1
+            // 
+            this.btnGuardar1.ActiveBorderThickness = 1;
+            this.btnGuardar1.ActiveCornerRadius = 20;
+            this.btnGuardar1.ActiveFillColor = System.Drawing.Color.Transparent;
+            this.btnGuardar1.ActiveForecolor = System.Drawing.Color.Transparent;
+            this.btnGuardar1.ActiveLineColor = System.Drawing.Color.Transparent;
+            this.btnGuardar1.BackColor = System.Drawing.SystemColors.Control;
+            this.btnGuardar1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnGuardar1.BackgroundImage")));
+            this.btnGuardar1.ButtonText = "Guardar";
+            this.btnGuardar1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnGuardar1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGuardar1.ForeColor = System.Drawing.Color.SeaGreen;
+            this.btnGuardar1.IdleBorderThickness = 1;
+            this.btnGuardar1.IdleCornerRadius = 20;
+            this.btnGuardar1.IdleFillColor = System.Drawing.Color.White;
+            this.btnGuardar1.IdleForecolor = System.Drawing.Color.Black;
+            this.btnGuardar1.IdleLineColor = System.Drawing.Color.Gray;
+            this.btnGuardar1.Location = new System.Drawing.Point(40, 509);
+            this.btnGuardar1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnGuardar1.Name = "btnGuardar1";
+            this.btnGuardar1.Size = new System.Drawing.Size(163, 40);
+            this.btnGuardar1.TabIndex = 90;
+            this.btnGuardar1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // btnEliminar1
+            // 
+            this.btnEliminar1.ActiveBorderThickness = 1;
+            this.btnEliminar1.ActiveCornerRadius = 20;
+            this.btnEliminar1.ActiveFillColor = System.Drawing.Color.Transparent;
+            this.btnEliminar1.ActiveForecolor = System.Drawing.Color.Transparent;
+            this.btnEliminar1.ActiveLineColor = System.Drawing.Color.Transparent;
+            this.btnEliminar1.BackColor = System.Drawing.SystemColors.Control;
+            this.btnEliminar1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnEliminar1.BackgroundImage")));
+            this.btnEliminar1.ButtonText = "Eliminar";
+            this.btnEliminar1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnEliminar1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEliminar1.ForeColor = System.Drawing.Color.SeaGreen;
+            this.btnEliminar1.IdleBorderThickness = 1;
+            this.btnEliminar1.IdleCornerRadius = 20;
+            this.btnEliminar1.IdleFillColor = System.Drawing.Color.White;
+            this.btnEliminar1.IdleForecolor = System.Drawing.Color.Black;
+            this.btnEliminar1.IdleLineColor = System.Drawing.Color.Gray;
+            this.btnEliminar1.Location = new System.Drawing.Point(410, 509);
+            this.btnEliminar1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnEliminar1.Name = "btnEliminar1";
+            this.btnEliminar1.Size = new System.Drawing.Size(163, 40);
+            this.btnEliminar1.TabIndex = 91;
+            this.btnEliminar1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnEliminar1.Click += new System.EventHandler(this.btnEliminar1_Click);
+            // 
             // Inventario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -597,9 +637,6 @@ namespace Login
         private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel2;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label6;
@@ -616,5 +653,8 @@ namespace Login
         private System.Windows.Forms.Button btnBuscar;
         private WindowsFormsControlLibrary1.BunifuCustomTextbox bunifuCustomTextbox3;
         private System.Windows.Forms.Label label9;
+        private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton21;
+        private Bunifu.Framework.UI.BunifuThinButton2 btnEliminar1;
+        private Bunifu.Framework.UI.BunifuThinButton2 btnGuardar1;
     }
 }

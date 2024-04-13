@@ -29,5 +29,10 @@ namespace Login
         {
 
         }
+
+        private void btnEliminar1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

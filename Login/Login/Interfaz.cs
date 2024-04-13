@@ -113,10 +113,7 @@ namespace Login
 
         private void bunifuFlatButton2_Click(object sender, EventArgs e)
         {
-            Form principal = new Facturacion();
-            principal.Show();
-            principal.Visible = true;
-            Visible = false;
+          
         }
     }
 }
