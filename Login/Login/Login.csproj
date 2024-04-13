@@ -109,11 +109,11 @@
     <Compile Include="Reparaciones.Designer.cs">
       <DependentUpon>Reparaciones.cs</DependentUpon>
     </Compile>
-    <Compile Include="Registro de ventas.cs">
+    <Compile Include="Ventas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Registro de ventas.Designer.cs">
-      <DependentUpon>Registro de ventas.cs</DependentUpon>
+    <Compile Include="Ventas.Designer.cs">
+      <DependentUpon>Ventas.cs</DependentUpon>
     </Compile>
     <Compile Include="Usuario.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -141,8 +141,8 @@
     <EmbeddedResource Include="Reparaciones.resx">
       <DependentUpon>Reparaciones.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Registro de ventas.resx">
-      <DependentUpon>Registro de ventas.cs</DependentUpon>
+    <EmbeddedResource Include="Ventas.resx">
+      <DependentUpon>Ventas.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Base_de_datos_innovatecDataSet.xsc">
       <DependentUpon>Base_de_datos_innovatecDataSet.xsd</DependentUpon>

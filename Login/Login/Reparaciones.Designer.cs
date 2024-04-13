@@ -153,7 +153,7 @@ namespace Login
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(0, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(622, 23);
+            this.label5.Size = new System.Drawing.Size(577, 23);
             this.label5.TabIndex = 69;
             this.label5.Text = "Gestión del Servicio de Reparaciones";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -174,7 +174,7 @@ namespace Login
             // btnGuardar
             // 
             this.btnGuardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGuardar.Location = new System.Drawing.Point(5, 466);
+            this.btnGuardar.Location = new System.Drawing.Point(27, 470);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(122, 36);
             this.btnGuardar.TabIndex = 71;
@@ -184,7 +184,7 @@ namespace Login
             // btnModificar
             // 
             this.btnModificar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnModificar.Location = new System.Drawing.Point(133, 466);
+            this.btnModificar.Location = new System.Drawing.Point(155, 470);
             this.btnModificar.Name = "btnModificar";
             this.btnModificar.Size = new System.Drawing.Size(122, 36);
             this.btnModificar.TabIndex = 72;
@@ -194,7 +194,7 @@ namespace Login
             // btnEstado
             // 
             this.btnEstado.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEstado.Location = new System.Drawing.Point(261, 466);
+            this.btnEstado.Location = new System.Drawing.Point(283, 470);
             this.btnEstado.Name = "btnEstado";
             this.btnEstado.Size = new System.Drawing.Size(122, 36);
             this.btnEstado.TabIndex = 73;
@@ -204,7 +204,7 @@ namespace Login
             // btnEliminar
             // 
             this.btnEliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEliminar.Location = new System.Drawing.Point(389, 466);
+            this.btnEliminar.Location = new System.Drawing.Point(411, 470);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(122, 36);
             this.btnEliminar.TabIndex = 74;
@@ -224,7 +224,7 @@ namespace Login
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Silver;
-            this.ClientSize = new System.Drawing.Size(622, 548);
+            this.ClientSize = new System.Drawing.Size(577, 548);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.btnEstado);
