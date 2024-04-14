@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.Runtime.InteropServices;
 
 namespace Login
 {
@@ -17,6 +18,11 @@ namespace Login
         {
             InitializeComponent();
         }
+        [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
+        private extern static void ReleaseCapture();
+
+        [DllImport("user32.DLL", EntryPoint = "SendMessage")]
+        private extern static void SendMessage(System.IntPtr hwnd, int wmsg, int wparam, int lparam);
 
         private void bunifuGradientPanel1_Paint(object sender, PaintEventArgs e)
         {
@@ -25,15 +31,82 @@ namespace Login
 
         private void alphaBlendTextBox3_TextChanged(object sender, EventArgs e)
         {
-           
+
         }
 
         private void bunifuThinButton21_Click(object sender, EventArgs e)
-        
-             
- 
 
- 
+
+
+
+
+        {
+
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lineShape2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtusuario_Enter(object sender, EventArgs e)
+        {
+            if (txtNombre.Text == "Usuario")
+            {
+                txtNombre.Text = "";
+                txtNombre.ForeColor = Color.LightGray;
+            }
+        }
+
+        private void txtusuario_Leave(object sender, EventArgs e)
+        {
+            if (txtNombre.Text == "")
+            {
+                txtNombre.Text = "Usuario";
+                txtNombre.ForeColor = Color.Silver;
+            }
+        }
+
+        private void txtContraseña_Enter(object sender, EventArgs e)
+        {
+            if (txtContraseña.Text == "Contraseña")
+            {
+                txtContraseña.Text = "";
+                txtContraseña.ForeColor = Color.LightGray;
+                txtContraseña.UseSystemPasswordChar = true;
+            }
+        }
+
+        private void txtContraseña_Leave(object sender, EventArgs e)
+        {
+            if (txtContraseña.Text == "")
+            {
+                txtContraseña.Text = "Contraseña";
+                txtContraseña.ForeColor = Color.Silver;
+                txtContraseña.UseSystemPasswordChar = false;
+            }
+        }
+
+        private void Form1_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+
+        private void panel1_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
             {
                 if (txtNombre.Text.Equals(""))
                 {
@@ -68,7 +141,7 @@ namespace Login
                     PERMISOS.Consultar = Convert.ToBoolean(dt.Rows[0][4]);
                     PERMISOS.Su = Convert.ToBoolean(dt.Rows[0][5]);
 
-                    Form principal = new Interfaz ();
+                    Form principal = new Interfaz();
                     principal.Show();
                     principal.Visible = true;
                     Visible = false;
@@ -81,11 +154,6 @@ namespace Login
                 }
                 CONEXION.cerrarcon();
             }
-
-
-
-             }
+        }
     }
-
-    
-
+}
