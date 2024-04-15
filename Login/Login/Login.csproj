@@ -71,6 +71,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Bajo Stock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bajo Stock.Designer.cs">
+      <DependentUpon>Bajo Stock.cs</DependentUpon>
+    </Compile>
     <Compile Include="Base_de_datos_innovatecDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -131,6 +137,9 @@
       <DependentUpon>Reparaciones.cs</DependentUpon>
     </Compile>
     <Compile Include="Usuario.cs" />
+    <EmbeddedResource Include="Bajo Stock.resx">
+      <DependentUpon>Bajo Stock.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Efectivo_Credito.resx">
       <DependentUpon>Efectivo_Credito.cs</DependentUpon>
     </EmbeddedResource>

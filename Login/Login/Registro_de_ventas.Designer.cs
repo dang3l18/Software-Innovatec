@@ -104,10 +104,6 @@ namespace Login
             this.btnEliminar = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btnCobrar = new Bunifu.Framework.UI.BunifuThinButton2();
             this.label2 = new System.Windows.Forms.Label();
-            this.alphaBlendTextBox14 = new ZBobb.AlphaBlendTextBox();
-            this.alphaBlendTextBox3 = new ZBobb.AlphaBlendTextBox();
-            this.alphaBlendTextBox13 = new ZBobb.AlphaBlendTextBox();
-            this.alphaBlendTextBox4 = new ZBobb.AlphaBlendTextBox();
             this.alphaBlendTextBox2 = new ZBobb.AlphaBlendTextBox();
             this.alphaBlendTextBox1 = new ZBobb.AlphaBlendTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid1)).BeginInit();
@@ -567,9 +563,9 @@ namespace Login
             this.bunifuGradientPanel2.Controls.Add(this.label15);
             this.bunifuGradientPanel2.Controls.Add(this.bunifuCustomDataGrid3);
             this.bunifuGradientPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.bunifuGradientPanel2.GradientBottomLeft = System.Drawing.Color.Gray;
-            this.bunifuGradientPanel2.GradientBottomRight = System.Drawing.Color.Gray;
-            this.bunifuGradientPanel2.GradientTopLeft = System.Drawing.Color.Gray;
+            this.bunifuGradientPanel2.GradientBottomLeft = System.Drawing.Color.Brown;
+            this.bunifuGradientPanel2.GradientBottomRight = System.Drawing.Color.Brown;
+            this.bunifuGradientPanel2.GradientTopLeft = System.Drawing.Color.Brown;
             this.bunifuGradientPanel2.GradientTopRight = System.Drawing.Color.White;
             this.bunifuGradientPanel2.Location = new System.Drawing.Point(0, 0);
             this.bunifuGradientPanel2.Name = "bunifuGradientPanel2";
@@ -583,6 +579,7 @@ namespace Login
             this.button4.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.ForeColor = System.Drawing.Color.White;
             this.button4.Location = new System.Drawing.Point(591, 11);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(146, 42);
@@ -592,7 +589,7 @@ namespace Login
             // 
             // bunifuTextbox4
             // 
-            this.bunifuTextbox4.BackColor = System.Drawing.Color.Gray;
+            this.bunifuTextbox4.BackColor = System.Drawing.Color.Brown;
             this.bunifuTextbox4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuTextbox4.BackgroundImage")));
             this.bunifuTextbox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.bunifuTextbox4.ForeColor = System.Drawing.Color.Black;
@@ -927,10 +924,6 @@ namespace Login
             this.bunifuGradientPanel3.Controls.Add(this.btnEliminar);
             this.bunifuGradientPanel3.Controls.Add(this.btnCobrar);
             this.bunifuGradientPanel3.Controls.Add(this.label2);
-            this.bunifuGradientPanel3.Controls.Add(this.alphaBlendTextBox14);
-            this.bunifuGradientPanel3.Controls.Add(this.alphaBlendTextBox3);
-            this.bunifuGradientPanel3.Controls.Add(this.alphaBlendTextBox13);
-            this.bunifuGradientPanel3.Controls.Add(this.alphaBlendTextBox4);
             this.bunifuGradientPanel3.Controls.Add(this.alphaBlendTextBox2);
             this.bunifuGradientPanel3.Controls.Add(this.alphaBlendTextBox1);
             this.bunifuGradientPanel3.Controls.Add(this.label5);
@@ -938,10 +931,11 @@ namespace Login
             this.bunifuGradientPanel3.Controls.Add(this.label3);
             this.bunifuGradientPanel3.Controls.Add(this.label4);
             this.bunifuGradientPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.bunifuGradientPanel3.GradientBottomLeft = System.Drawing.Color.Gray;
-            this.bunifuGradientPanel3.GradientBottomRight = System.Drawing.Color.Gray;
-            this.bunifuGradientPanel3.GradientTopLeft = System.Drawing.Color.Gray;
-            this.bunifuGradientPanel3.GradientTopRight = System.Drawing.Color.White;
+            this.bunifuGradientPanel3.ForeColor = System.Drawing.Color.White;
+            this.bunifuGradientPanel3.GradientBottomLeft = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.bunifuGradientPanel3.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.bunifuGradientPanel3.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.bunifuGradientPanel3.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
             this.bunifuGradientPanel3.Location = new System.Drawing.Point(0, 0);
             this.bunifuGradientPanel3.Name = "bunifuGradientPanel3";
             this.bunifuGradientPanel3.Quality = 10;
@@ -989,13 +983,13 @@ namespace Login
             this.btnCambiar.ActiveFillColor = System.Drawing.Color.Transparent;
             this.btnCambiar.ActiveForecolor = System.Drawing.Color.Black;
             this.btnCambiar.ActiveLineColor = System.Drawing.Color.Transparent;
-            this.btnCambiar.BackColor = System.Drawing.Color.Transparent;
+            this.btnCambiar.BackColor = System.Drawing.SystemColors.Control;
             this.btnCambiar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCambiar.BackgroundImage")));
             this.btnCambiar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnCambiar.ButtonText = "Cambiar";
             this.btnCambiar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCambiar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCambiar.ForeColor = System.Drawing.Color.SeaGreen;
+            this.btnCambiar.ForeColor = System.Drawing.Color.White;
             this.btnCambiar.IdleBorderThickness = 1;
             this.btnCambiar.IdleCornerRadius = 20;
             this.btnCambiar.IdleFillColor = System.Drawing.Color.Gray;
@@ -1015,13 +1009,13 @@ namespace Login
             this.btnEliminar.ActiveFillColor = System.Drawing.Color.Transparent;
             this.btnEliminar.ActiveForecolor = System.Drawing.Color.Black;
             this.btnEliminar.ActiveLineColor = System.Drawing.Color.Transparent;
-            this.btnEliminar.BackColor = System.Drawing.Color.Transparent;
+            this.btnEliminar.BackColor = System.Drawing.SystemColors.Control;
             this.btnEliminar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnEliminar.BackgroundImage")));
             this.btnEliminar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnEliminar.ButtonText = "Eliminar";
             this.btnEliminar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnEliminar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEliminar.ForeColor = System.Drawing.Color.Black;
+            this.btnEliminar.ForeColor = System.Drawing.Color.White;
             this.btnEliminar.IdleBorderThickness = 1;
             this.btnEliminar.IdleCornerRadius = 20;
             this.btnEliminar.IdleFillColor = System.Drawing.Color.Gray;
@@ -1036,18 +1030,18 @@ namespace Login
             // 
             // btnCobrar
             // 
-            this.btnCobrar.ActiveBorderThickness = 8;
+            this.btnCobrar.ActiveBorderThickness = 35;
             this.btnCobrar.ActiveCornerRadius = 9;
             this.btnCobrar.ActiveFillColor = System.Drawing.Color.Transparent;
             this.btnCobrar.ActiveForecolor = System.Drawing.Color.Black;
             this.btnCobrar.ActiveLineColor = System.Drawing.Color.Transparent;
-            this.btnCobrar.BackColor = System.Drawing.Color.Transparent;
+            this.btnCobrar.BackColor = System.Drawing.SystemColors.Control;
             this.btnCobrar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCobrar.BackgroundImage")));
             this.btnCobrar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnCobrar.ButtonText = "Cobrar";
             this.btnCobrar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCobrar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCobrar.ForeColor = System.Drawing.Color.Black;
+            this.btnCobrar.ForeColor = System.Drawing.Color.White;
             this.btnCobrar.IdleBorderThickness = 1;
             this.btnCobrar.IdleCornerRadius = 20;
             this.btnCobrar.IdleFillColor = System.Drawing.Color.Gray;
@@ -1070,62 +1064,6 @@ namespace Login
             this.label2.Size = new System.Drawing.Size(109, 20);
             this.label2.TabIndex = 112;
             this.label2.Text = "Precio Total:";
-            // 
-            // alphaBlendTextBox14
-            // 
-            this.alphaBlendTextBox14.BackAlpha = 0;
-            this.alphaBlendTextBox14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.alphaBlendTextBox14.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.alphaBlendTextBox14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.alphaBlendTextBox14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.alphaBlendTextBox14.Location = new System.Drawing.Point(1052, 490);
-            this.alphaBlendTextBox14.Name = "alphaBlendTextBox14";
-            this.alphaBlendTextBox14.Size = new System.Drawing.Size(100, 19);
-            this.alphaBlendTextBox14.TabIndex = 111;
-            this.alphaBlendTextBox14.Text = "0.00";
-            this.alphaBlendTextBox14.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // alphaBlendTextBox3
-            // 
-            this.alphaBlendTextBox3.BackAlpha = 0;
-            this.alphaBlendTextBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.alphaBlendTextBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.alphaBlendTextBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.alphaBlendTextBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.alphaBlendTextBox3.Location = new System.Drawing.Point(28, 558);
-            this.alphaBlendTextBox3.Name = "alphaBlendTextBox3";
-            this.alphaBlendTextBox3.Size = new System.Drawing.Size(100, 19);
-            this.alphaBlendTextBox3.TabIndex = 110;
-            this.alphaBlendTextBox3.Text = "0.00";
-            this.alphaBlendTextBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // alphaBlendTextBox13
-            // 
-            this.alphaBlendTextBox13.BackAlpha = 0;
-            this.alphaBlendTextBox13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.alphaBlendTextBox13.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.alphaBlendTextBox13.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.alphaBlendTextBox13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.alphaBlendTextBox13.Location = new System.Drawing.Point(347, 558);
-            this.alphaBlendTextBox13.Name = "alphaBlendTextBox13";
-            this.alphaBlendTextBox13.Size = new System.Drawing.Size(100, 20);
-            this.alphaBlendTextBox13.TabIndex = 109;
-            this.alphaBlendTextBox13.Text = "0.00";
-            this.alphaBlendTextBox13.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // alphaBlendTextBox4
-            // 
-            this.alphaBlendTextBox4.BackAlpha = 0;
-            this.alphaBlendTextBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.alphaBlendTextBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.alphaBlendTextBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.alphaBlendTextBox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.alphaBlendTextBox4.Location = new System.Drawing.Point(198, 558);
-            this.alphaBlendTextBox4.Name = "alphaBlendTextBox4";
-            this.alphaBlendTextBox4.Size = new System.Drawing.Size(100, 19);
-            this.alphaBlendTextBox4.TabIndex = 108;
-            this.alphaBlendTextBox4.Text = "0.00";
-            this.alphaBlendTextBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // alphaBlendTextBox2
             // 
@@ -1240,10 +1178,6 @@ namespace Login
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn11;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn12;
         private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel3;
-        private ZBobb.AlphaBlendTextBox alphaBlendTextBox14;
-        private ZBobb.AlphaBlendTextBox alphaBlendTextBox3;
-        private ZBobb.AlphaBlendTextBox alphaBlendTextBox13;
-        private ZBobb.AlphaBlendTextBox alphaBlendTextBox4;
         private ZBobb.AlphaBlendTextBox alphaBlendTextBox2;
         private ZBobb.AlphaBlendTextBox alphaBlendTextBox1;
         private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton1;

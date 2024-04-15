@@ -53,6 +53,7 @@ namespace Login
             // 
             // bunifuGradientPanel1
             // 
+            this.bunifuGradientPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
             this.bunifuGradientPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel1.BackgroundImage")));
             this.bunifuGradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.bunifuGradientPanel1.Controls.Add(this.alphaBlendTextBox2);
@@ -64,10 +65,11 @@ namespace Login
             this.bunifuGradientPanel1.Controls.Add(this.label2);
             this.bunifuGradientPanel1.Controls.Add(this.bunifuGradientPanel2);
             this.bunifuGradientPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.bunifuGradientPanel1.GradientBottomLeft = System.Drawing.Color.Black;
-            this.bunifuGradientPanel1.GradientBottomRight = System.Drawing.Color.White;
-            this.bunifuGradientPanel1.GradientTopLeft = System.Drawing.Color.White;
-            this.bunifuGradientPanel1.GradientTopRight = System.Drawing.Color.White;
+            this.bunifuGradientPanel1.ForeColor = System.Drawing.Color.White;
+            this.bunifuGradientPanel1.GradientBottomLeft = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.bunifuGradientPanel1.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.bunifuGradientPanel1.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.bunifuGradientPanel1.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
             this.bunifuGradientPanel1.Location = new System.Drawing.Point(0, 0);
             this.bunifuGradientPanel1.Name = "bunifuGradientPanel1";
             this.bunifuGradientPanel1.Quality = 10;
@@ -86,7 +88,9 @@ namespace Login
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.White;
             this.label5.Location = new System.Drawing.Point(170, 98);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(125, 20);
@@ -128,10 +132,10 @@ namespace Login
             this.bunifuGradientPanel3.Controls.Add(this.alphaBlendTextBox1);
             this.bunifuGradientPanel3.Controls.Add(this.label4);
             this.bunifuGradientPanel3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.bunifuGradientPanel3.GradientBottomLeft = System.Drawing.Color.Blue;
-            this.bunifuGradientPanel3.GradientBottomRight = System.Drawing.Color.Blue;
-            this.bunifuGradientPanel3.GradientTopLeft = System.Drawing.Color.White;
-            this.bunifuGradientPanel3.GradientTopRight = System.Drawing.Color.White;
+            this.bunifuGradientPanel3.GradientBottomLeft = System.Drawing.Color.White;
+            this.bunifuGradientPanel3.GradientBottomRight = System.Drawing.Color.Brown;
+            this.bunifuGradientPanel3.GradientTopLeft = System.Drawing.Color.Brown;
+            this.bunifuGradientPanel3.GradientTopRight = System.Drawing.Color.Brown;
             this.bunifuGradientPanel3.Location = new System.Drawing.Point(515, 64);
             this.bunifuGradientPanel3.Name = "bunifuGradientPanel3";
             this.bunifuGradientPanel3.Quality = 10;
@@ -140,6 +144,7 @@ namespace Login
             // 
             // button2
             // 
+            this.button2.ForeColor = System.Drawing.Color.Black;
             this.button2.Location = new System.Drawing.Point(20, 97);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(186, 34);
@@ -149,6 +154,7 @@ namespace Login
             // 
             // button1
             // 
+            this.button1.ForeColor = System.Drawing.Color.Black;
             this.button1.Location = new System.Drawing.Point(20, 34);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(186, 38);
@@ -179,7 +185,9 @@ namespace Login
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(290, 302);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(67, 20);
@@ -189,7 +197,9 @@ namespace Login
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(109, 302);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(74, 20);
@@ -202,9 +212,9 @@ namespace Login
             this.bunifuGradientPanel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.bunifuGradientPanel2.Controls.Add(this.label1);
             this.bunifuGradientPanel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.bunifuGradientPanel2.GradientBottomLeft = System.Drawing.Color.Blue;
-            this.bunifuGradientPanel2.GradientBottomRight = System.Drawing.Color.White;
-            this.bunifuGradientPanel2.GradientTopLeft = System.Drawing.Color.White;
+            this.bunifuGradientPanel2.GradientBottomLeft = System.Drawing.Color.Brown;
+            this.bunifuGradientPanel2.GradientBottomRight = System.Drawing.Color.Brown;
+            this.bunifuGradientPanel2.GradientTopLeft = System.Drawing.Color.Brown;
             this.bunifuGradientPanel2.GradientTopRight = System.Drawing.Color.White;
             this.bunifuGradientPanel2.Location = new System.Drawing.Point(0, 0);
             this.bunifuGradientPanel2.Name = "bunifuGradientPanel2";
