@@ -83,6 +83,12 @@
       <DependentUpon>Base_de_datos_innovatecDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="CONEXION.cs" />
+    <Compile Include="Consultar_Usuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultar_Usuario.Designer.cs">
+      <DependentUpon>Consultar_Usuario.cs</DependentUpon>
+    </Compile>
     <Compile Include="DatosGet.cs" />
     <Compile Include="Efectivo_Credito.cs">
       <SubType>Form</SubType>
@@ -112,6 +118,12 @@
     <Compile Include="PERMISOS.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Registro de Facturas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registro de Facturas.Designer.cs">
+      <DependentUpon>Registro de Facturas.cs</DependentUpon>
+    </Compile>
     <Compile Include="Registro_de_Cliente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -140,6 +152,9 @@
     <EmbeddedResource Include="Bajo Stock.resx">
       <DependentUpon>Bajo Stock.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Consultar_Usuario.resx">
+      <DependentUpon>Consultar_Usuario.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Efectivo_Credito.resx">
       <DependentUpon>Efectivo_Credito.cs</DependentUpon>
     </EmbeddedResource>
@@ -162,6 +177,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Registro de Facturas.resx">
+      <DependentUpon>Registro de Facturas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Registro_de_Cliente.resx">
       <DependentUpon>Registro_de_Cliente.cs</DependentUpon>
     </EmbeddedResource>

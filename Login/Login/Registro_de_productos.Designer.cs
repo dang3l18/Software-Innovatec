@@ -97,10 +97,10 @@ namespace Login
             this.bunifuGradientPanel2.Controls.Add(this.label10);
             this.bunifuGradientPanel2.Controls.Add(this.label12);
             this.bunifuGradientPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.bunifuGradientPanel2.GradientBottomLeft = System.Drawing.Color.Gray;
-            this.bunifuGradientPanel2.GradientBottomRight = System.Drawing.Color.Gray;
+            this.bunifuGradientPanel2.GradientBottomLeft = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.bunifuGradientPanel2.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
             this.bunifuGradientPanel2.GradientTopLeft = System.Drawing.Color.White;
-            this.bunifuGradientPanel2.GradientTopRight = System.Drawing.Color.White;
+            this.bunifuGradientPanel2.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
             this.bunifuGradientPanel2.Location = new System.Drawing.Point(0, 0);
             this.bunifuGradientPanel2.Name = "bunifuGradientPanel2";
             this.bunifuGradientPanel2.Quality = 50;
@@ -116,9 +116,9 @@ namespace Login
             this.bunifuGradientPanel1.Controls.Add(this.btnEliminar1);
             this.bunifuGradientPanel1.Controls.Add(this.bunifuThinButton21);
             this.bunifuGradientPanel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.bunifuGradientPanel1.GradientBottomLeft = System.Drawing.Color.Black;
-            this.bunifuGradientPanel1.GradientBottomRight = System.Drawing.Color.White;
-            this.bunifuGradientPanel1.GradientTopLeft = System.Drawing.Color.White;
+            this.bunifuGradientPanel1.GradientBottomLeft = System.Drawing.Color.Brown;
+            this.bunifuGradientPanel1.GradientBottomRight = System.Drawing.Color.Brown;
+            this.bunifuGradientPanel1.GradientTopLeft = System.Drawing.Color.Brown;
             this.bunifuGradientPanel1.GradientTopRight = System.Drawing.Color.White;
             this.bunifuGradientPanel1.Location = new System.Drawing.Point(0, 0);
             this.bunifuGradientPanel1.Name = "bunifuGradientPanel1";
@@ -147,7 +147,7 @@ namespace Login
             this.btnGuardar1.ActiveFillColor = System.Drawing.Color.Transparent;
             this.btnGuardar1.ActiveForecolor = System.Drawing.Color.Transparent;
             this.btnGuardar1.ActiveLineColor = System.Drawing.Color.Transparent;
-            this.btnGuardar1.BackColor = System.Drawing.Color.Transparent;
+            this.btnGuardar1.BackColor = System.Drawing.SystemColors.Control;
             this.btnGuardar1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnGuardar1.BackgroundImage")));
             this.btnGuardar1.ButtonText = "Guardar";
             this.btnGuardar1.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -172,7 +172,7 @@ namespace Login
             this.btnEliminar1.ActiveFillColor = System.Drawing.Color.Transparent;
             this.btnEliminar1.ActiveForecolor = System.Drawing.Color.Transparent;
             this.btnEliminar1.ActiveLineColor = System.Drawing.Color.Transparent;
-            this.btnEliminar1.BackColor = System.Drawing.Color.Transparent;
+            this.btnEliminar1.BackColor = System.Drawing.SystemColors.Control;
             this.btnEliminar1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnEliminar1.BackgroundImage")));
             this.btnEliminar1.ButtonText = "Eliminar";
             this.btnEliminar1.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -197,7 +197,7 @@ namespace Login
             this.bunifuThinButton21.ActiveFillColor = System.Drawing.Color.Transparent;
             this.bunifuThinButton21.ActiveForecolor = System.Drawing.Color.Transparent;
             this.bunifuThinButton21.ActiveLineColor = System.Drawing.Color.Transparent;
-            this.bunifuThinButton21.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuThinButton21.BackColor = System.Drawing.SystemColors.Control;
             this.bunifuThinButton21.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton21.BackgroundImage")));
             this.bunifuThinButton21.ButtonText = "Modificar";
             this.bunifuThinButton21.Cursor = System.Windows.Forms.Cursors.Hand;
