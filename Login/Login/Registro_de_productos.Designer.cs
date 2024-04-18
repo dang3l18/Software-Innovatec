@@ -36,10 +36,10 @@ namespace Login
             this.btnBuscar = new System.Windows.Forms.Button();
             this.bunifuGradientPanel2 = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
+            this.bunifuImageButton2 = new Bunifu.UI.WinForms.BunifuImageButton();
             this.btnEliminar = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
             this.btnModficar = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
             this.btnGuardar = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
-            this.btnInicio = new Bunifu.Framework.UI.BunifuImageButton();
             this.bunifuThinButton22 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuThinButton23 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuThinButton24 = new Bunifu.Framework.UI.BunifuThinButton2();
@@ -59,9 +59,10 @@ namespace Login
             this.label10 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.txtBuscar = new Bunifu.Framework.UI.BunifuTextbox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.bunifuCustomTextbox1 = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
             this.bunifuGradientPanel2.SuspendLayout();
             this.bunifuGradientPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnInicio)).BeginInit();
             this.SuspendLayout();
             // 
             // btnBuscar
@@ -80,6 +81,8 @@ namespace Login
             // 
             this.bunifuGradientPanel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel2.BackgroundImage")));
             this.bunifuGradientPanel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuGradientPanel2.Controls.Add(this.bunifuCustomTextbox1);
+            this.bunifuGradientPanel2.Controls.Add(this.label6);
             this.bunifuGradientPanel2.Controls.Add(this.bunifuGradientPanel1);
             this.bunifuGradientPanel2.Controls.Add(this.bunifuThinButton22);
             this.bunifuGradientPanel2.Controls.Add(this.bunifuThinButton23);
@@ -114,10 +117,10 @@ namespace Login
             // 
             this.bunifuGradientPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel1.BackgroundImage")));
             this.bunifuGradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuGradientPanel1.Controls.Add(this.bunifuImageButton2);
             this.bunifuGradientPanel1.Controls.Add(this.btnEliminar);
             this.bunifuGradientPanel1.Controls.Add(this.btnModficar);
             this.bunifuGradientPanel1.Controls.Add(this.btnGuardar);
-            this.bunifuGradientPanel1.Controls.Add(this.btnInicio);
             this.bunifuGradientPanel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.bunifuGradientPanel1.GradientBottomLeft = System.Drawing.Color.DarkRed;
             this.bunifuGradientPanel1.GradientBottomRight = System.Drawing.Color.DarkRed;
@@ -128,6 +131,40 @@ namespace Login
             this.bunifuGradientPanel1.Quality = 10;
             this.bunifuGradientPanel1.Size = new System.Drawing.Size(155, 489);
             this.bunifuGradientPanel1.TabIndex = 113;
+            // 
+            // bunifuImageButton2
+            // 
+            this.bunifuImageButton2.ActiveImage = null;
+            this.bunifuImageButton2.AllowAnimations = true;
+            this.bunifuImageButton2.AllowBuffering = false;
+            this.bunifuImageButton2.AllowToggling = false;
+            this.bunifuImageButton2.AllowZooming = true;
+            this.bunifuImageButton2.AllowZoomingOnFocus = false;
+            this.bunifuImageButton2.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuImageButton2.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.bunifuImageButton2.ErrorImage = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton2.ErrorImage")));
+            this.bunifuImageButton2.FadeWhenInactive = false;
+            this.bunifuImageButton2.Flip = Bunifu.UI.WinForms.BunifuImageButton.FlipOrientation.Normal;
+            this.bunifuImageButton2.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton2.Image")));
+            this.bunifuImageButton2.ImageActive = null;
+            this.bunifuImageButton2.ImageLocation = null;
+            this.bunifuImageButton2.ImageMargin = 20;
+            this.bunifuImageButton2.ImageSize = new System.Drawing.Size(50, 41);
+            this.bunifuImageButton2.ImageZoomSize = new System.Drawing.Size(70, 61);
+            this.bunifuImageButton2.InitialImage = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton2.InitialImage")));
+            this.bunifuImageButton2.Location = new System.Drawing.Point(34, 56);
+            this.bunifuImageButton2.Name = "bunifuImageButton2";
+            this.bunifuImageButton2.Rotation = 0;
+            this.bunifuImageButton2.ShowActiveImage = true;
+            this.bunifuImageButton2.ShowCursorChanges = true;
+            this.bunifuImageButton2.ShowImageBorders = true;
+            this.bunifuImageButton2.ShowSizeMarkers = false;
+            this.bunifuImageButton2.Size = new System.Drawing.Size(70, 61);
+            this.bunifuImageButton2.TabIndex = 118;
+            this.bunifuImageButton2.ToolTipText = "";
+            this.bunifuImageButton2.WaitOnLoad = false;
+            this.bunifuImageButton2.Zoom = 20;
+            this.bunifuImageButton2.ZoomSpeed = 10;
             // 
             // btnEliminar
             // 
@@ -396,20 +433,6 @@ namespace Login
             this.btnGuardar.TextPadding = new System.Windows.Forms.Padding(0);
             this.btnGuardar.UseDefaultRadiusAndThickness = true;
             // 
-            // btnInicio
-            // 
-            this.btnInicio.BackColor = System.Drawing.Color.Transparent;
-            this.btnInicio.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnInicio.Image = ((System.Drawing.Image)(resources.GetObject("btnInicio.Image")));
-            this.btnInicio.ImageActive = null;
-            this.btnInicio.Location = new System.Drawing.Point(27, 27);
-            this.btnInicio.Name = "btnInicio";
-            this.btnInicio.Size = new System.Drawing.Size(60, 56);
-            this.btnInicio.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnInicio.TabIndex = 114;
-            this.btnInicio.TabStop = false;
-            this.btnInicio.Zoom = 10;
-            // 
             // bunifuThinButton22
             // 
             this.bunifuThinButton22.ActiveBorderThickness = 1;
@@ -489,7 +512,7 @@ namespace Login
             // 
             this.bunifuCustomTextbox4.BorderColor = System.Drawing.Color.Black;
             this.bunifuCustomTextbox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomTextbox4.Location = new System.Drawing.Point(365, 330);
+            this.bunifuCustomTextbox4.Location = new System.Drawing.Point(365, 350);
             this.bunifuCustomTextbox4.Multiline = true;
             this.bunifuCustomTextbox4.Name = "bunifuCustomTextbox4";
             this.bunifuCustomTextbox4.Size = new System.Drawing.Size(192, 22);
@@ -500,7 +523,7 @@ namespace Login
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(194, 224);
+            this.label1.Location = new System.Drawing.Point(194, 244);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(86, 20);
             this.label1.TabIndex = 86;
@@ -520,7 +543,7 @@ namespace Login
             // 
             this.bunifuCustomTextbox10.BorderColor = System.Drawing.Color.Black;
             this.bunifuCustomTextbox10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomTextbox10.Location = new System.Drawing.Point(365, 380);
+            this.bunifuCustomTextbox10.Location = new System.Drawing.Point(365, 400);
             this.bunifuCustomTextbox10.Multiline = true;
             this.bunifuCustomTextbox10.Name = "bunifuCustomTextbox10";
             this.bunifuCustomTextbox10.Size = new System.Drawing.Size(192, 22);
@@ -530,7 +553,7 @@ namespace Login
             // 
             this.bunifuCustomTextbox11.BorderColor = System.Drawing.Color.Black;
             this.bunifuCustomTextbox11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomTextbox11.Location = new System.Drawing.Point(365, 274);
+            this.bunifuCustomTextbox11.Location = new System.Drawing.Point(365, 294);
             this.bunifuCustomTextbox11.Multiline = true;
             this.bunifuCustomTextbox11.Name = "bunifuCustomTextbox11";
             this.bunifuCustomTextbox11.Size = new System.Drawing.Size(192, 22);
@@ -540,7 +563,7 @@ namespace Login
             // 
             this.bunifuCustomTextbox12.BorderColor = System.Drawing.Color.Black;
             this.bunifuCustomTextbox12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomTextbox12.Location = new System.Drawing.Point(365, 222);
+            this.bunifuCustomTextbox12.Location = new System.Drawing.Point(365, 242);
             this.bunifuCustomTextbox12.Multiline = true;
             this.bunifuCustomTextbox12.Name = "bunifuCustomTextbox12";
             this.bunifuCustomTextbox12.Size = new System.Drawing.Size(192, 22);
@@ -582,7 +605,7 @@ namespace Login
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(194, 330);
+            this.label3.Location = new System.Drawing.Point(194, 350);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(133, 20);
             this.label3.TabIndex = 32;
@@ -616,7 +639,7 @@ namespace Login
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(200, 378);
+            this.label5.Location = new System.Drawing.Point(200, 398);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(60, 20);
             this.label5.TabIndex = 17;
@@ -627,7 +650,7 @@ namespace Login
             this.label10.AutoSize = true;
             this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(194, 272);
+            this.label10.Location = new System.Drawing.Point(194, 292);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(148, 20);
             this.label10.TabIndex = 16;
@@ -658,6 +681,27 @@ namespace Login
             this.txtBuscar.TabIndex = 101;
             this.txtBuscar.text = "Codigo";
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(194, 204);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(73, 20);
+            this.label6.TabIndex = 114;
+            this.label6.Text = "Edicion:";
+            // 
+            // bunifuCustomTextbox1
+            // 
+            this.bunifuCustomTextbox1.BorderColor = System.Drawing.Color.Black;
+            this.bunifuCustomTextbox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomTextbox1.Location = new System.Drawing.Point(365, 204);
+            this.bunifuCustomTextbox1.Multiline = true;
+            this.bunifuCustomTextbox1.Name = "bunifuCustomTextbox1";
+            this.bunifuCustomTextbox1.Size = new System.Drawing.Size(192, 22);
+            this.bunifuCustomTextbox1.TabIndex = 115;
+            // 
             // Registro_de_productos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -672,7 +716,6 @@ namespace Login
             this.bunifuGradientPanel2.ResumeLayout(false);
             this.bunifuGradientPanel2.PerformLayout();
             this.bunifuGradientPanel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.btnInicio)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -700,9 +743,11 @@ namespace Login
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label12;
         private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel1;
-        private Bunifu.Framework.UI.BunifuImageButton btnInicio;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton2 btnEliminar;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton2 btnModficar;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton2 btnGuardar;
+        private Bunifu.UI.WinForms.BunifuImageButton bunifuImageButton2;
+        private WindowsFormsControlLibrary1.BunifuCustomTextbox bunifuCustomTextbox1;
+        private System.Windows.Forms.Label label6;
     }
 }

@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace Login
 {
-    public partial class Inventario : Form
+    public partial class Movimientos_de_Inventario : Form
     {
-        public Inventario()
+        public Movimientos_de_Inventario()
         {
             InitializeComponent();
-        }
-
-        private void bunifuFormControlBox1_HelpClicked(object sender, EventArgs e)
-        {
-
         }
     }
 }
