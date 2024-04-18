@@ -70,7 +70,7 @@ namespace Login
             // 
             // Paneltitlebar_MouseDown
             // 
-            this.Paneltitlebar_MouseDown.BackColor = System.Drawing.Color.White;
+            this.Paneltitlebar_MouseDown.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.Paneltitlebar_MouseDown.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Paneltitlebar_MouseDown.BackgroundImage")));
             this.Paneltitlebar_MouseDown.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Paneltitlebar_MouseDown.Controls.Add(this.IconMaximizar);
@@ -144,6 +144,7 @@ namespace Login
             // 
             // Panelmenu
             // 
+            this.Panelmenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.Panelmenu.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Panelmenu.BackgroundImage")));
             this.Panelmenu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Panelmenu.Controls.Add(this.btnBarramenu);
@@ -282,7 +283,7 @@ namespace Login
             // bunifuFlatButton2
             // 
             this.bunifuFlatButton2.Activecolor = System.Drawing.Color.White;
-            this.bunifuFlatButton2.BackColor = System.Drawing.Color.White;
+            this.bunifuFlatButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.bunifuFlatButton2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.bunifuFlatButton2.BorderRadius = 0;
             this.bunifuFlatButton2.ButtonText = "Facturacion";
@@ -317,7 +318,7 @@ namespace Login
             // bunifuFlatButton1
             // 
             this.bunifuFlatButton1.Activecolor = System.Drawing.Color.White;
-            this.bunifuFlatButton1.BackColor = System.Drawing.Color.White;
+            this.bunifuFlatButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.bunifuFlatButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.bunifuFlatButton1.BorderRadius = 0;
             this.bunifuFlatButton1.ButtonText = "Inventario";
